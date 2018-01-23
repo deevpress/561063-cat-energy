@@ -10,7 +10,7 @@
       <img class="page-header__logo-image" src="http://placehold.it/50x50" width="50" height="50" alt="лого сайта 'Кэт Энерджи'">
     </a>
     <!--Название сайта-->
-    <a class="site-title  site-title--top" href="">
+    <a class="site-title  site-title--header" href="">
       <span class="site-title__first">cat</span>
       <span class="site-title__second">energy</span>
     </a>
@@ -34,33 +34,35 @@
 
   <main class="page-main">
     <section class="banner">
-      <header class="banner__title">Функциональное питание для котов</header>
+      <h1 class="banner__title">Функциональное питание для котов</h1>
       <p class="banner__slogan">Занялся собой? Займись котом!</p>
+
+      <!--Кнопка выбора программы-->
+      <a class="button program-slim__button button--green" href="">Подобрать программу</a>
     </section>
 
     <section class="program-slim">
-      <!--Кнопка выбора программы-->
-      <a class="button program-slim__button button--green" href="">Подобрать программу</a>
+      <h2 class="program-slim__title visually-hidden">Список программ</h2>
 
       <!--Список программ похудения-->
-      <div class="program-slim__list">
-        <div class="program-slim__item">
+      <ul class="program-slim__list">
+        <li class="program-slim__item">
           <img class="program-slim__item-img" src="" alt="Программа похудения">
-          <span class="program-slim__item-title">Похудение</span>
-          <div class="program-slim__item-desc">
+          <h3 class="program-slim__item-title">Похудение</h3>
+          <p class="program-slim__item-desc">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </div>
+          </p>
           <a class="program-slim__catalog-link">Каталог Slim</a>
-        </div>
-        <div class="program-slim__item">
+        </li>
+        <li class="program-slim__item">
           <img class="program-slim__item-img" src="" alt="Программа набора массы">
-          <span class="program-slim__item-title">Набор массы</span>
-          <div class="program-slim__item-desc">
+          <h3 class="program-slim__item-title">Набор массы</h3>
+          <p class="program-slim__item-desc">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </div>
+          </p>
           <a class="program-slim__catalog-link">Каталог Pro</a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section><!--<section class="program-slim">-->
 
     <!--Ключевые особенности-->
@@ -92,15 +94,15 @@
       <!--Факты-->
       <ul class="example-facts">
         <li class="example-facts__item">
-          <div class="example-facts__item-value">5 кг</div>
-          <div class="example-facts__item-desc">снижение веса</div>
+          <span class="example-facts__item-value">5 кг</span>
+          <span class="example-facts__item-desc">снижение веса</span>
         </li>
         <li class="example-facts__item">
-          <div class="example-facts__item-value">60 дней</div>
-          <div class="example-facts__item-desc">затрачено времени</div>
+          <span class="example-facts__item-value">60 дней</span>
+          <span class="example-facts__item-desc">затрачено времени</span>
         </li>
       </ul>
-      <div class="example-cost">Затраты на питание: 15 000 руб.</div>
+      <p class="example-cost">Затраты на питание: 15 000 руб.</p>
       <div class="example-effect">
         <img class="example-effect__img" src="http://placehold.it/150x150" width="150" height="150" alt="Фото кота до и после программы">
         <!--Переключатель До и После -->
@@ -128,13 +130,14 @@
     </div>
 
     <!--Название сайта-->
-    <a class="site-title site-title--bottom" href="">
+    <a class="site-title site-title--footer" href="">
       <span class="site-title__first">cat</span>
       <span class="site-title__second">energy</span>
     </a>
+
     <!--Социальные сети-->
     <div class="socials">
-      <div class="socials__list">
+      <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">в Вконтакте</a>
           </li>
@@ -144,8 +147,9 @@
           <li class="socials__item">
             <a class="socials__link socials__link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
           </li>
-      </div>
+      </ul>
     </div>
+
     <!--Копирайт-->
     <div class="page-footer__copyright">
       <a href="https://htmlacademy.ru">
