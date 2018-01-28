@@ -1,3 +1,20 @@
 .site-list {
-  font-family: @font-base;
+  font-family: @font-add;
+  text-transform: uppercase;
+  display: none;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    text-decoration: none;
+    margin-right: 1em;
+    flex-grow: 1;
+  }
 }
