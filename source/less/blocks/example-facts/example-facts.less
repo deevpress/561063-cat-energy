@@ -2,4 +2,33 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.example-facts__item {
+  padding: 1em;
+  padding-bottom: 0.0em;
+  border: 1px solid black;
+}
+
+.example-facts__item-value {
+  display: block;
+}
+
+.example-facts__item-desc {
+  display: block;
+  margin-bottom: -1em;
+  padding: 0.5em;
+}
+
+@media (min-width: @tablet-width) {
+  .example-facts {
+    display: flex;
+  }
+
+  .example-facts__cost {
+    flex-grow: 1;
+  }
 }
