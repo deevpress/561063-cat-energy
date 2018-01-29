@@ -43,58 +43,71 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form-group">
-        <label class="form-group__label">Имя:<sup>*</sup>
-          <input class="form-group__input" type="text" name="name" placeholder="Барсик" required>
-        </label>
-        <label class="form-group__label">Вес (кг):<sup>*</sup>
-          <input class="form-group__input" type="number" name="weight" placeholder="7" required>
-        </label>
-        <label class="form-group__label">Возраст (лет)
-          <input class="form-group__input" type="number" name="age" placeholder="7">
-        </label>
-      </fieldset>
-      <fieldset class="form-group">
-        <label class="form-group__label">
-          <input class="form-group__input" type="radio" name="program" value="program-slim" checked>Похудение
-        </label>
-        <label class="form-group__label">
-          <input class="form-group__input" type="radio" name="program" value="program-pro">Набор массы
-        </label>
-        <label class="form-group__label">
-          <input class="form-group__input" type="radio" name="program" value="program-no">Не знаю (нужен ваш совет)
-        </label>
-      </fieldset>
+      <div class="columns--equal-width-desktop">
+        <fieldset class="form-group">
+          <label class="form-group__label">Имя:<sup>*</sup>
+            <input class="form-group__input" type="text" name="name" placeholder="Барсик" required>
+          </label>
+          <label class="form-group__label">Вес (кг):<sup>*</sup>
+            <input class="form-group__input" type="number" name="weight" placeholder="7" required>
+          </label>
+          <label class="form-group__label">Возраст (лет)
+            <input class="form-group__input" type="number" name="age" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="form-group">
+          <label class="form-group__label">
+            <input class="form-group__input" type="radio" name="program" value="program-slim" checked>Похудение
+          </label>
+          <label class="form-group__label">
+            <input class="form-group__input" type="radio" name="program" value="program-pro">Набор массы
+          </label>
+          <label class="form-group__label">
+            <input class="form-group__input" type="radio" name="program" value="program-no">Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+      </div>
+
       <fieldset class="form-group">
         <h3 class="form-group__title">Контактные данные (владельца кота)</h3>
-        <label class="form-group__label">E-mail:<sup>*</sup>
-          <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </label>
-        <label class="form-group__label">Телефон:<sup>*</sup>
-          <input class="form-group__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-        </label>
+
+        <div class="columns--equal-width-desktop">
+          <label class="form-group__label">E-mail:<sup>*</sup>
+            <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="form-group__label">Телефон:<sup>*</sup>
+            <input class="form-group__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
       </fieldset>
+
+
       <fieldset class="form-group">
         <h3 class="form-group__title">Комментарий</h3>
         <textarea class="form-group__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
+
       <fieldset class="form-group">
         <h3 class="form-group__title">Дополнительно</h3>
-        <label class="form-group__label">
-          <input class="form-group__input" type="checkbox" name="sweetener" checked>Сахарозаменитель
-        </label>
-        <label class="form-group__label">
-          <input class="form-group__input" type="checkbox" name="water">Питьевая вода
-        </label>
-        <label class="form-group__label">
-          <input class="form-group__input" type="checkbox" name="milk">Молоко
-        </label>
-        <label class="form-group__label">
-          <input class="form-group__input" type="checkbox" name="vitamins">Витамины
-        </label>
+        <div class="product-add-order__list  columns--equal-width-tablet">
+          <label class="form-group__label product-add-order__item">
+            <input class="form-group__input" type="checkbox" name="sweetener" checked>Сахарозаменитель
+          </label>
+          <label class="form-group__label product-add-order__item">
+            <input class="form-group__input" type="checkbox" name="water">Питьевая вода
+          </label>
+          <label class="form-group__label product-add-order__item">
+            <input class="form-group__input" type="checkbox" name="milk">Молоко
+          </label>
+          <label class="form-group__label product-add-order__item">
+            <input class="form-group__input" type="checkbox" name="vitamins">Витамины
+          </label>
+        </div>
       </fieldset>
-      <button class="button form-group__button button--green" type="submit" value="Отправить заявку">Отправить заявку</button>
-      <div class="form__required"><sup>*</sup> — Обязательные поля</div>
+      <div class="columns--equal-width-tablet">
+        <button class="button form-group__button button--green" type="submit" value="Отправить заявку">Отправить заявку</button>
+        <div class="form__required"><sup>*</sup> — Обязательные поля</div>
+      </div>
     </form>
   </main>
 
