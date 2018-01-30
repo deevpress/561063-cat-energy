@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../img/index-can-mobile@1x.png");
+  background-image: url("../img/index-background-mobile@1x.jpg") ;
   background-repeat: no-repeat;
   font-family: @font-add;
   color: white;
@@ -7,8 +7,9 @@
   padding: 30px 20px 20px 20px;
   text-align: center;
   position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
 }
-
 
 .banner__title {
   text-align: center;
@@ -18,14 +19,65 @@
 .banner__slogan {
   text-align: center;
   font-family: @font-add;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .banner__img {
-  top: -150px;
-  z-index: -1;
+  position: absolute;
+  top: 170px;
+  left: 40px;
 }
 
 .banner-dummy {
   display: inline-block;
-  height: 100px;
+  width: 100%;
+  height: 280px;
+}
+
+.banner__button {
+  display: block;
+}
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .banner {
+    background-image: none;
+    width: 618px;
+    margin-bottom: 350px;
+  }
+  .banner__title, .banner__slogan {
+    color: black;
+    text-align: left;
+  }
+  .banner__img {
+    top: 130px;
+    left: 40px;
+    height: 400px;
+    width: 420px;
+  }
+  .banner-dummy {
+    height: 1px;
+  }
+  .banner__button {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 350px;
+    background-image: url("../img/index-background-mobile@1x.jpg") ;
+    background-position: top right;
+    background-size: auto 100%;
+  }
+  .banner__img {
+    left: 40%;
+  }
 }
