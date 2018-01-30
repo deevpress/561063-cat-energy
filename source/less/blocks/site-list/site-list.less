@@ -2,7 +2,7 @@
   font-family: @font-add;
 
   text-transform: uppercase;
-
+  background-color: transparent;
   display: none;
   list-style: none;
 }
@@ -19,5 +19,11 @@
     color: black;
     margin-right: 1em;
     flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    color: white;
   }
 }

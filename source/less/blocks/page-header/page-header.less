@@ -1,8 +1,14 @@
 .page-header {
+  background-color: white;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: @mobile-width;
+  box-sizing: content-box;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 .page-header__logo {
@@ -13,13 +19,15 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    min-width: @tablet-width;
     justify-content: flex-start;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    position: absolute;
+    background-color: transparent;
+    min-width: @desktop-width;
   }
   .page-header__logo {
     flex-grow: 2;

@@ -4,7 +4,6 @@
   font-family: @font-add;
   color: white;
   background-position: top;
-  padding: 30px 20px 20px 20px;
   text-align: center;
   position: relative;
   width: @mobile-width;
@@ -13,7 +12,6 @@
 
 .banner__title {
   text-align: center;
-  font-family: @font-add;
 }
 
 .banner__slogan {
@@ -53,6 +51,10 @@
     color: black;
     text-align: left;
   }
+  .banner__title {
+    font-size: 50px;
+  }
+
   .banner__img {
     top: 130px;
     left: 40px;
@@ -72,12 +74,27 @@
   .banner {
     width: 100%;
     margin: 0;
-    padding-bottom: 350px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background-image: url("../img/index-background-mobile@1x.jpg") ;
     background-position: top right;
     background-size: auto 100%;
   }
+  .banner__button {
+    position: absolute;
+    top: 280px;
+  }
+
   .banner__img {
     left: 40%;
+  }
+
+  .banner__title {
+    width: 400px;
+    margin-left: 50px;
+  }
+
+  .banner__slogan {
+    margin-left: 50px;
   }
 }
