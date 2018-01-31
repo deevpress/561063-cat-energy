@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,7 +39,7 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="columns--equal-width-desktop">
+      <div class="columns columns--equal-width-desktop">
         <fieldset class="form-group">
           <label class="form-group__label">Имя:<sup>*</sup>
             <input class="form-group__input" type="text" name="name" placeholder="Барсик" required>
@@ -66,7 +67,7 @@
       <fieldset class="form-group">
         <h3 class="form-group__title">Контактные данные (владельца кота)</h3>
 
-        <div class="columns--equal-width-desktop">
+        <div class="columns columns--equal-width-desktop">
           <label class="form-group__label">E-mail:<sup>*</sup>
             <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
@@ -82,9 +83,9 @@
         <textarea class="form-group__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group product-add-order">
         <h3 class="form-group__title">Дополнительно</h3>
-        <div class="product-add-order__list  columns--equal-width-tablet">
+        <div class="product-add-order__list columns columns--equal-width-tablet">
           <label class="form-group__label product-add-order__item">
             <input class="form-group__input" type="checkbox" name="sweetener" checked>Сахарозаменитель
           </label>
@@ -99,8 +100,8 @@
           </label>
         </div>
       </fieldset>
-      <div class="columns--equal-width-tablet">
-        <button class="button form-group__button button--green" type="submit" value="Отправить заявку">Отправить заявку</button>
+      <div class="columns columns--equal-width-tablet">
+        <button class="button button--green" type="submit" value="Отправить заявку">Отправить заявку</button>
         <div class="form__required"><sup>*</sup> — Обязательные поля</div>
       </div>
     </form>
