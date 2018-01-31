@@ -1,25 +1,48 @@
 .example-facts__list {
   list-style: none;
   margin: 0;
+  margin-top: 25px;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+
 }
 
 .example-facts__item {
-  padding: 1em;
   padding-bottom: 0;
-  border: 1px solid black;
+  text-align: center;
+  width: 123px;
+  height: 38px;
+  margin: 0;
+  position: relative;
 }
 
 .example-facts__item-value {
+  padding-top: 7px;
+  padding-bottom: 8px;
   display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 1px solid silver;
 }
 
 .example-facts__item-desc {
   display: block;
-  margin-bottom: -1em;
-  padding: 0.5em;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  width: 50px;
+  position: absolute;
+  top: 47px;
+  left: 35px;
+}
+
+.example-facts__cost {
+  margin-top: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 @media (min-width: @tablet-width) {

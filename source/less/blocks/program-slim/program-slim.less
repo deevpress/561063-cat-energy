@@ -1,18 +1,41 @@
 .program-slim__list {
   list-style: none;
   margin: 0;
-  padding: 0;
-  font-family: @font-base;
+  padding: 0 20px;
+  //padding-top: 20px;
+  font-family: @font-add;
 }
 
 .program-slim__item {
   background-color: @bg-block-color;
-  padding: 1em;
+  padding: 20px;
+  padding-bottom: 18px;
+  margin-top: 20px;
 }
 
 .program-slim__item-title {
   text-transform: uppercase;
   font-family: @font-add;
+  margin-left: 71px;
+  margin-top: 11px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.program-slim__item-desc {
+  font-family: @font-base;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 17px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.program-slim__catalog-link {
+  text-transform: uppercase;
 }
 
 @media (min-width: @desktop-width) {
