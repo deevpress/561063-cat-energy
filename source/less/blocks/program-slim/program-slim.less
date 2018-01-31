@@ -11,6 +11,7 @@
   padding: 20px;
   padding-bottom: 18px;
   margin-top: 20px;
+  //display: inline-block;
 }
 
 .program-slim__item-title {
@@ -36,6 +37,42 @@
 
 .program-slim__catalog-link {
   text-transform: uppercase;
+}
+
+
+@media (min-width: @tablet-width) {
+  .program-slim__list {
+    padding: 0 29px;
+  }
+
+  .program-slim__item {
+    padding-left: 53px;
+    padding-bottom: 57px;
+    margin-top: 31px;
+  }
+
+  .program-slim__item-title {
+    margin-top: 45px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .program-slim__item-desc {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 255px;
+    margin-bottom: 30px;
+    border: 0;
+
+    &--pro {
+      padding-right: 295px;
+    }
+  }
+
+  .program-slim__catalog-link {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
