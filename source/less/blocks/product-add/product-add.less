@@ -8,17 +8,31 @@
   color: black;
 }
 
+.product-add__button {
+  display: block;
+}
+
 .product-add__title {
   text-transform: uppercase;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .product-add__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
+  .product-add__button {
+    flex-basis: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-add {
+    flex-grow: 1;
+  }
   .product-add__title {
     flex-basis: 400px;
   }
@@ -28,6 +42,6 @@
   }
 
   .product-add__button {
-    flex-basis: 300px;
+    flex-basis: 200px;
   }
 }
