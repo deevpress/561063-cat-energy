@@ -1,13 +1,15 @@
 .program-slim__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
-  //padding-top: 20px;
+  margin: 0 20px;
+  padding: 0;
   font-family: @font-add;
 }
 
 .program-slim__item {
   background-color: @bg-block-color;
+  margin: 0;
+  padding: 0;
   padding: 20px;
   padding-bottom: 18px;
   margin-top: 20px;
@@ -42,7 +44,7 @@
 
 @media (min-width: @tablet-width) {
   .program-slim__list {
-    padding: 0 29px;
+    margin: 0 29px;
   }
 
   .program-slim__item {
@@ -78,9 +80,11 @@
 @media (min-width: @desktop-width) {
   .program-slim__list {
     display: flex;
+    margin: 0px 68px;
+    margin-left: 107px;
   }
 
   .program-slim__item {
-    margin: 1em;
+    margin-right: 80px;
   }
 }
