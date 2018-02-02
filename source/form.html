@@ -40,18 +40,25 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <div class="columns columns--equal-width-desktop">
-        <fieldset class="form-group">
-          <label class="form-group__label">Имя:<sup>*</sup>
-            <input class="form-group__input" type="text" name="name" placeholder="Барсик" required>
-          </label>
-          <label class="form-group__label">Вес (кг):<sup>*</sup>
-            <input class="form-group__input" type="number" name="weight" placeholder="7" required>
-          </label>
-          <label class="form-group__label">Возраст (лет)
-            <input class="form-group__input" type="number" name="age" placeholder="7">
-          </label>
+        <!--Общая информация о коте -->
+        <fieldset class="form-group form-group--cat-info">
+          <div class="form-group__control">
+            <label >Имя:<sup>*</sup></label>
+            <input type="text" name="name" placeholder="Барсик" required>
+          </div>
+
+          <div class="form-group__control">
+            <label>Вес (кг):<sup>*</sup></label>
+            <input type="number" name="weight" placeholder="7" required>
+          </div>
+
+          <div class="form-group__control">
+            <label>Возраст (лет)</label>
+            <input type="number" name="age" placeholder="7">
+          </div>
         </fieldset>
-        <fieldset class="form-group">
+
+        <fieldset class="form-group form-group--cat-program">
           <label class="form-group__label">
             <input class="form-group__input" type="radio" name="program" value="program-slim" checked>Похудение
           </label>
@@ -64,7 +71,7 @@
         </fieldset>
       </div>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group form-group--cat-contacts">
         <h3 class="form-group__title">Контактные данные (владельца кота)</h3>
 
         <div class="columns columns--equal-width-desktop">
@@ -78,7 +85,7 @@
       </fieldset>
 
 
-      <fieldset class="form-group">
+      <fieldset class="form-group form-group--cat-comment">
         <h3 class="form-group__title">Комментарий</h3>
         <textarea class="form-group__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
