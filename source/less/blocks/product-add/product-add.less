@@ -1,8 +1,48 @@
+.product-add__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-add__link {
   text-decoration: none;
   color: black;
 }
 
+.product-add__button {
+  display: block;
+}
+
 .product-add__title {
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .product-add__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .product-add__button {
+    flex-basis: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-add {
+    flex-grow: 1;
+  }
+
+  .product-add__title {
+    flex-basis: 400px;
+  }
+
+  .product-add__value {
+    flex-basis: 200px;
+  }
+
+  .product-add__button {
+    flex-basis: 200px;
+  }
 }

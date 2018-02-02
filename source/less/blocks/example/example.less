@@ -1,4 +1,13 @@
 .example {
   background-color: @bg-block-color;
-  padding: 1em;
+  padding: 21px;
+  margin-top: 45px;
+  font-family: @font-add;
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+  }
 }

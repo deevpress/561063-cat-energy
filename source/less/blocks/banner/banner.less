@@ -1,20 +1,144 @@
 .banner {
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   font-family: @font-add;
   color: white;
   background-position: top;
-  padding: 30px 20px 20px 20px;
   text-align: center;
+  position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
+  padding-top: 26px;
 }
-
 
 .banner__title {
   text-align: center;
-  font-family: @font-add;
+  margin: 0;
+  font-size: 36px;
+  line-height: 38px;
 }
 
 .banner__slogan {
   text-align: center;
   font-family: @font-add;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.banner__img {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
+
+.banner-dummy {
+  display: inline-block;
+  width: 100%;
+  height: 283px;
+}
+
+.banner__button {
+  display: block;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .banner {
+    background-image: none;
+    width: 541px;
+    padding-top: 31px;
+    margin-bottom: 580px;
+  }
+
+  .banner__title,
+  .banner__slogan {
+    color: black;
+    text-align: left;
+  }
+
+  .banner__title {
+    font-size: 59px;
+    line-height: 59px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+
+  .banner__slogan {
+    font-size: 20px;
+    margin-top: 38px;
+  }
+
+  .banner__img {
+    top: 230px;
+    left: 0;
+    height: 605px;
+    width: 620px;
+  }
+
+  .banner-dummy {
+    height: 1px;
+  }
+
+  .banner__button {
+    position: absolute;
+    top: 255px;
+    margin-left: 2px;
+    width: 207px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    width: auto;
+    margin: 0;
+    margin-left: 189px;
+    padding-top: 100px;
+    padding-bottom: 310px;
+    //background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top right;
+    background-size: auto 100%;
+  }
+
+  .banner::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -123px;
+    right: 0;
+    width: 680px;
+    height: 700px;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat center center #68b738;
+    background-size: cover;
+  }
+
+  .banner__button {
+    position: absolute;
+    top: 332px;
+  }
+
+  .banner__img {
+    left: 411px;
+    top: 26px;
+    height: 500px;
+    width: 513px;
+  }
+
+  .banner__title {
+    font-size: 60px;
+    letter-spacing: 0;
+    width: 440px;
+    margin-left: 0;
+  }
+
+  .banner__slogan {
+    margin-left: 0;
+  }
 }

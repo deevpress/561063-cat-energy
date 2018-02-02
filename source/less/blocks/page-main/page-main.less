@@ -1,3 +1,26 @@
 .page-main {
-  font-family: @font-base;
+  //font-family: @font-base;
+  background-color: white;
+  width: @mobile-width;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    min-width: @desktop-width;
+    //padding-top: 123px;
+  }
+
+  .page-main--position-banner {
+    margin-top: -110px;
+    padding-top: 110px;
+  }
 }
