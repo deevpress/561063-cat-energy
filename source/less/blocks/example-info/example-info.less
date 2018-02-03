@@ -11,8 +11,28 @@
   margin-top: 27px;
 }
 
+@media (min-width: @tablet-width) {
+  .example-info__title {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .example-info__desc {
+    margin-top: 51px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .example-info {
     flex-basis: 500px;
+  }
+
+  .example-info__title {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
   }
 }

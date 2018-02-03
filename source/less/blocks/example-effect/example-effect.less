@@ -1,3 +1,19 @@
 .example-effect {
   font-family: @font-base;
 }
+
+@media (min-width: @tablet-width) {
+  .example-effect {
+    position: relative;
+    background-color: lightgray;
+    margin: 0 -30px;
+  }
+
+  .example-effect__img {
+    position: absolute;
+    top: -172px;
+    left: 47px;
+    height: 521px;
+    width: 682px;
+  }
+}

@@ -38,6 +38,7 @@
 }
 
 .example-facts__cost {
+  margin: 0;
   margin-top: 52px;
   text-align: center;
   text-transform: uppercase;
@@ -47,10 +48,43 @@
 @media (min-width: @tablet-width) {
   .example-facts {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 133px;
+    margin-top: 55px;
+  }
+
+  .example-facts__list {
+    margin: 0;
+    width: 366px;
+  }
+
+  .example-facts__item {
+    padding-bottom: 0;
+    width: 162px;
+  }
+
+  .example-facts__item-value {
+    padding-top: 10px;
+    padding-bottom: 17px;
+    font-size: 29px;
+  }
+
+  .example-facts__item-desc {
+    font-size: 14px;
+    line-height: 14px;
+    width: 136px;
+    top: 63px;
+    left: 12px;
   }
 
   .example-facts__cost {
-    flex-grow: 1;
+    margin: 0;
+    margin-top: 6px;
+    flex-grow: 0;
+    font-size: 20px;
+    width: 180px;
+    text-align: right;
   }
 }
 

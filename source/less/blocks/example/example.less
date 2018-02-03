@@ -9,9 +9,25 @@
   margin-left: -20px;
 }
 
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: white;
+  }
+
+  .example__example-info {
+    margin-bottom: 194px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .example {
     display: flex;
     justify-content: space-between;
+    background-color: lightgray;
+  }
+
+  .example__example-info {
+    margin-top: -200px;
+    margin-bottom: 194px;
   }
 }
