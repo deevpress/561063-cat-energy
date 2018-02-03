@@ -7,7 +7,6 @@
   text-align: center;
   position: relative;
   width: @mobile-width;
-  margin: 0 auto;
   padding-top: 26px;
 }
 
@@ -54,7 +53,6 @@
     background-image: none;
     width: 541px;
     padding-top: 31px;
-    margin-bottom: 580px;
   }
 
   .banner__title,
@@ -89,8 +87,9 @@
   .banner__button {
     position: absolute;
     top: 255px;
-    margin-left: 2px;
-    width: 207px;
+    margin-left: 3px;
+    padding: 11px 20px;
+    width: 204px;
     font-size: 20px;
   }
 }
@@ -98,11 +97,8 @@
 @media (min-width: @desktop-width) {
   .banner {
     width: auto;
-    margin: 0;
-    margin-left: 189px;
-    padding-top: 100px;
-    padding-bottom: 310px;
-    //background-image: url("../img/index-background-mobile@1x.jpg");
+    padding-top: 112px;
+    padding-bottom: 245px;
     background-position: top right;
     background-size: auto 100%;
   }
@@ -111,17 +107,18 @@
     position: absolute;
     content: "";
     display: block;
-    top: -123px;
+    top: -110px;
     right: 0;
     width: 680px;
-    height: 700px;
+    height: 696px;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat center center #68b738;
     background-size: cover;
   }
 
   .banner__button {
     position: absolute;
-    top: 332px;
+    top: 346px;
+    margin-left: 0px;
   }
 
   .banner__img {
