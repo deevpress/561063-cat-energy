@@ -11,6 +11,7 @@
   margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 18px;
+  position: relative;
 }
 
 .program-slim__item-title {
@@ -32,6 +33,57 @@
   margin-bottom: 17px;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
+}
+
+//Картинки для блока Программы похудения
+.program-slim__item--slim::before {
+  position: absolute;
+  padding: 0;
+  display: block;
+  content: "";
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 22px;
+  top: 25px;
+}
+
+.program-slim__item--slim::after {
+  position: absolute;
+  padding: 0;
+  display: block;
+  content: "";
+  background: url("../img/icon-cat-slim.svg") no-repeat center center;
+  width: 35px;
+  height: 50px;
+  top: 22px;
+  left: 30px;
+}
+
+.program-slim__item--pro::before {
+  position: absolute;
+  padding: 0;
+  display: block;
+  content: "";
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 22px;
+  top: 25px;
+}
+
+.program-slim__item--pro::after {
+  position: absolute;
+  padding: 0;
+  display: block;
+  content: "";
+  background: url("../img/icon-cat-pro.svg") no-repeat center center;
+  width: 67px;
+  height: 50px;
+  top: 23px;
+  left: 13px;
 }
 
 .program-slim__catalog-link {
@@ -61,7 +113,8 @@
   .program-slim__item-desc {
     font-size: 16px;
     line-height: 24px;
-    padding-right: 255px;
+    //padding-right: 255px;
+    padding-right: 293px;
     margin-bottom: 30px;
     border: 0;
 
@@ -79,7 +132,7 @@
   .program-slim__list {
     display: flex;
     justify-content: space-between;
-    margin: 0px 110px;
+    margin: 0 110px;
   }
 
   .program-slim__item {
