@@ -2,11 +2,17 @@
   font-family: @font-base;
 }
 
+.example-effect__toggle {
+  width: 198px;
+  margin-left: 64px;
+  margin-top: 26px;
+  padding-bottom: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .example-effect {
     position: relative;
     background-color: lightgray;
-    margin: 0 -30px;
   }
 
   .example-effect__img {
@@ -15,5 +21,27 @@
     left: 47px;
     height: 521px;
     width: 682px;
+  }
+
+  .example-effect__toggle {
+    margin: 0 auto;
+    padding-top: 362px;
+    width: 569px;
+    padding-bottom: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-effect__img {
+    position: absolute;
+    top: -198px;
+    left: 36px;
+    height: 521px;
+    width: 682px;
+  }
+
+  .example-effect__toggle {
+    margin: 0;
+    margin-left: 115px;
   }
 }

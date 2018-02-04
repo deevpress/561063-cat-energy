@@ -7,12 +7,53 @@
 }
 
 .partnership__text {
-  padding: 1em;
+  padding: 27px 20px;
+  font-family: @font-base;
+  font-weight: normal;
+}
+
+.partnership__address {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .partnership__title {
   float: left;
   width: 50%;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: @font-add;
+  line-height: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .partnership {
+    position: relative;
+  }
+
+  .partnership__text {
+    position: absolute;
+    box-sizing: border-box;
+    width: 570px;
+    height: 200px;
+    top: 93px;
+    left: 112px;
+    background-color: white;
+    padding: 63px 76px;
+  }
+
+  .partnership__title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .partnership__address {
+    margin-left: 250px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .partnership__map {
+    height: 400px;
+  }
 }
