@@ -47,11 +47,12 @@
 
 @media (min-width: @tablet-width) {
   .example-facts {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     height: 133px;
-    margin-top: 55px;
+    //margin-top: 55px;
   }
 
   .example-facts__list {
@@ -91,6 +92,13 @@
 @media (min-width: @desktop-width) {
   .example-facts {
     margin-top: 74px;
+    height: 157px;
     flex-direction: column;
+  }
+
+  .example-facts__cost {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
   }
 }
