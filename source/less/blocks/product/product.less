@@ -61,24 +61,124 @@
   border-bottom: 1px solid #ededed;
 }
 
+.product__show-more {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  background: url(../img/icon-plus-mobile.svg);
+  opacity: 0.2;
+}
+
+.product__show-more-title {
+  margin: 0;
+  margin-top: -4px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product__show-more-desc {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 22px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: arial;
+}
+
 .product {
   flex-basis: 250px;
 }
 
 @media (min-width: @tablet-width) {
   .product {
-    margin-top: 139px;
-    flex-basis: 324px;
-    min-height: 432px;
+    margin-top: 140px;
+    flex-basis: 284px;
+    min-height: 408px;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     text-align: center;
+    border: none;
+  }
+
+  .product__desc {
+    margin: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .product__title {
+    margin: 0;
+    //margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 135px;
+  }
+
+  .product__features {
+    margin-top: 22px;
+    font-size: 16px;
+    font-family: @font-base;
+  }
+
+  .product__features li {
+    margin-bottom: 8px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+
+  .product__button {
+    margin: 0 18px;
+    margin-bottom: 10px;
+  }
+
+
+  .product__show-more {
+    margin-top: 53px;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+  }
+
+  .product__show-more-title {
+    margin: 0 auto;
+    width: 170px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product__show-more-desc {
+    margin-top: 26px;
+    margin-bottom: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 200px;
+  }
+
+  .product--bg-show-more {
+    background-color: white;
+    border: 1px solid @bg-block-color;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product {
-    flex-basis: 250px;
+    margin-top: 141px;
+    flex-basis: 205px;
   }
 }
