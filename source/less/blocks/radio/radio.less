@@ -16,20 +16,20 @@
   cursor: pointer;
 }
 
-.radio__text:before {
-  content: '';
+.radio__text::before {
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid #CDD1DA;
+  border: 1px solid #cdd1da;
   border-radius: 50%;
-  background: #FFF;
+  background: #ffffff;
 }
 
-.radio__text:after {
-  content: '';
+.radio__text::after {
+  content: "";
   position: absolute;
   top: 6px;
   left: 9px;
@@ -37,15 +37,14 @@
   height: 12px;
   border-radius: 50%;
   background: #68b738;
-  //box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
   opacity: 0;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.radio__input:checked + .radio__text:after {
+.radio__input:checked + .radio__text::after {
   opacity: 1;
 }
 
-.radio__input:focus + .radio__text:before {
+.radio__input:focus + .radio__text::before {
   //box-shadow: 0 0 0 3px rgba(255,255,0,.7);
 }
