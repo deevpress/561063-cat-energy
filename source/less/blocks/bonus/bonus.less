@@ -1,11 +1,12 @@
 .bonus {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin: 0 auto;
+  /*margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 33px;
   width: 280px;
   min-height: 289px;
+  */
   text-align: center;
 }
 
@@ -22,7 +23,7 @@
   font-family: @font-base;
 }
 
-.banner__image {
+.bonus__image {
   margin: auto;
   margin-top: 65px;
   width: 55px;
@@ -31,18 +32,18 @@
 
 @media (min-width: @tablet-width) {
   .bonus {
-    margin-top: 70px;
-    margin-bottom: 75px;
+    //margin-top: 70px;
+    //margin-bottom: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: 708px;
-    min-height: 200px;
+    //min-width: 708px;
+    //min-height: 200px;
     background-size: cover;
   }
 
-  .banner__image {
+  .bonus__image {
     margin: 0;
     padding: 0;
     padding-left: 93px;
@@ -58,8 +59,21 @@
 }
 
 @media (min-width: @desktop-width) {
+  .bonus {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .bonus__image {
+    margin: 0;
+    padding: 0;
+    flex-grow: 3;
+  }
+
   .bonus__text {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
   }
 }
