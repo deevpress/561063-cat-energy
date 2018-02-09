@@ -1,6 +1,4 @@
 .form-group {
-  padding: 0;
-  border: 0;
 }
 
 /*
@@ -43,7 +41,18 @@
   text-transform: uppercase;
 }
 
+.form-group__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+}
+
 .form-group__label {
+  margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
   font-weight: normal;
@@ -53,11 +62,22 @@
 }
 
 .form-group__textarea {
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 15px;
   width: 100%;
+  height: 133px;
+  resize: none;
   text-transform: uppercase;
+  //width: 262px;
+  font-size: 16px;
+  font-family: @font-add;
 }
 
 .form-group__input {
+  margin-left: 12px;
   padding: 13px 0;
+  padding-left: 15px;
   text-transform: uppercase;
+  flex-grow: 1;
 }
