@@ -5,8 +5,71 @@
   text-transform: uppercase;
 }
 
+.toggle__control {
+  margin: auto;
+  width: 84px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid silver;
+  position: relative;
+}
+
+.toggle__left {
+  width: 35px;
+  height: 6px;
+  top: 3px;
+  left: 6px;
+  display: inline-block;
+  position: absolute;
+  background-color: #68b738;
+  border-radius: 4px;
+}
+
 @media (min-width: @tablet-width) {
   .toggle {
     font-size: 20px;
+  }
+
+  .toggle__control {
+    margin: auto;
+    width: 425px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: silver;
+    position: relative;
+  }
+
+  .toggle__left {
+    top: -16px;
+    left: 211px;
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    background-color: white;
+    //opacity: 0.5;
+    margin: auto;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .toggle__left::before {
+    top: 13px;
+    left: 13px;
+    width: 7px;
+    height: 7px;
+
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #68b738;
+    border-radius: 4px;
   }
 }
