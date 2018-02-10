@@ -20,13 +20,13 @@
       <!--<div class="main-nav__wrapper">-->
         <ul class="main-nav__list site-list">
           <li>
-            <a class="site-list__item site-list__item--white" href="index.html">Главная</a>
+            <a class="site-list__item" href="index.html">Главная</a>
           </li>
           <li>
-            <a class="site-list__item site-list__item--white" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__item" href="catalog.html">Каталог продукции</a>
           </li>
           <li>
-            <a class="site-list__item site-list__item--white" href="form.html">Подбор программы</a>
+            <a class="site-list__item" href="form.html">Подбор программы</a>
           </li>
         </ul>
       <!--</div>-->
@@ -36,7 +36,7 @@
   <main class="page-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <h1 class="form__title">Подбор программы</h1>
-      <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="form__desc">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
       <div class="columns columns--equal-width-desktop">
         <!--Общая информация о коте -->
         <fieldset class="form-group form-group--cat-info form__cat-info">
@@ -51,7 +51,7 @@
           </div>
 
           <div class="form-group__control">
-            <label>Возраст (лет)</label>
+            <label>Возраст (лет):</label>
             <input type="number" name="age" placeholder="7">
           </div>
         </fieldset>
@@ -73,13 +73,13 @@
       </div>
 
       <fieldset class="form-group form-group--cat-contacts form__cat-contacts">
-        <h3 class="form-group__title">Контактные данные (владельца кота)</h3>
+        <h3 class="form-group__title form-group__title--decor-contacts-right">Контактные данные (владельца кота)</h3>
 
         <div class="columns columns--equal-width-desktop">
-          <label class="form-group__label">E-mail:*
+          <label class="form-group__label"><span>E-mail:*</span>
             <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label class="form-group__label">Телефон:*
+          <label class="form-group__label"><span>Телефон:*</span>
             <input class="form-group__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
@@ -87,12 +87,12 @@
 
 
       <fieldset class="form-group form-group--cat-comment form__cat-comment">
-        <h3 class="form-group__title">Комментарий</h3>
+        <h3 class="form-group__title form-group__title--decor-comments-right">Комментарий</h3>
         <textarea class="form-group__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
       <fieldset class="form-group product-add-order form__product-add">
-        <h3 class="form-group__title-add">Дополнительно</h3>
+        <h3 class="form-group__title-add form-group__title-add--decor-right">Дополнительно</h3>
         <div class="product-add-order__list columns columns--equal-width-tablet">
 
           <label class="checkbox product-add-order__item">
