@@ -4,6 +4,9 @@
   line-height: 42px;
 }
 
-.product-add-order__item {
-  flex-basis: @tablet-width/3 + @tablet-width/3/3;
+@media (min-width: @tablet-width) {
+  .product-add-order__item {
+    flex-basis: 284px;
+    height: 72px;
+  }
 }

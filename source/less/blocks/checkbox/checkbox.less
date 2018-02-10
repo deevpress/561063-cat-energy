@@ -42,3 +42,38 @@
 .checkbox__input:checked + .checkbox__text::after {
   opacity: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .checkbox {
+    font-size: 20px;
+  }
+
+  .checkbox__text {
+    padding: 0 0 0 58px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .checkbox__text::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .checkbox__text::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    top: 8px;
+    bottom: 0;
+    right: 0;
+    left: 10px;
+    opacity: 0;
+    background: url("../img/icon-tick.svg") no-repeat center center;
+  }
+}
