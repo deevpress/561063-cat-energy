@@ -4,11 +4,13 @@
 }
 
 .main-nav__toggle {
+/*
   margin-top: 23px;
+  top: -66px;
   right: 20px;
   width: 24px;
   height: 18px;
-
+*/
   border: none;
   background: url("../img/icon-mobile-menu.svg") no-repeat 0 0;
   background-color: transparent;
@@ -20,13 +22,19 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-  display: flex;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
   }
 }
 
