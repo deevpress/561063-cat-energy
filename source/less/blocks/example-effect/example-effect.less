@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: lightgray;
+    background: linear-gradient(to right, @bg-block-color 50%, #eaeaea 50%);
   }
 
   .example-effect__img {
@@ -36,6 +36,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .example-effect {
+    background: linear-gradient(to right, @bg-block-color 56%, #eaeaea 56%);
+  }
+
   .example-effect__img {
     height: 510px;
     width: 682px;
