@@ -16,17 +16,17 @@
     </a>
 
     <nav class="main-nav page-header__main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle page-header__toggle" type="button"></button>
       <!--<div class="main-nav__wrapper">-->
         <ul class="main-nav__list site-list">
           <li>
             <a class="site-list__item" href="index.html">Главная</a>
           </li>
           <li>
-            <a class="site-list__item" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__item " href="catalog.html">Каталог продукции</a>
           </li>
           <li>
-            <a class="site-list__item" href="form.html">Подбор программы</a>
+            <a class="site-list__item site-list__item-active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       <!--</div>-->
@@ -78,9 +78,11 @@
         <div class="columns columns--equal-width-desktop">
           <label class="form-group__label"><span>E-mail:*</span>
             <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <img class="form-group__email-ico" src="img/icon-mail.svg" width="24" height="24">
           </label>
           <label class="form-group__label"><span>Телефон:*</span>
             <input class="form-group__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <img class="form-phone-ico" src="img/icon-phone.svg" width="24" height="24">
           </label>
         </div>
       </fieldset>
