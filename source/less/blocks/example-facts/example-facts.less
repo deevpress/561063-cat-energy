@@ -19,7 +19,7 @@
 
 .example-facts__item-value {
   padding-top: 7px;
-  padding-bottom: 8px;
+  padding-bottom: 11px;
   display: block;
   font-size: 24px;
   text-transform: uppercase;
@@ -27,14 +27,17 @@
 }
 
 .example-facts__item-desc {
+  top: 47px;
+  left: 16px;
+  width: 80px;
+  padding: 0 5px;
   display: block;
-  font-family: "Arial", sans-serif;
+  position: absolute;
+  background-color: @bg-block-color;
+  font-family: @font-base;
   font-size: 12px;
   line-height: 12px;
-  width: 50px;
-  position: absolute;
-  top: 47px;
-  left: 35px;
+
 }
 
 .example-facts__cost {
@@ -72,11 +75,12 @@
   }
 
   .example-facts__item-desc {
-    font-size: 14px;
-    line-height: 14px;
     width: 136px;
     top: 63px;
     left: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: white;
   }
 
   .example-facts__cost {

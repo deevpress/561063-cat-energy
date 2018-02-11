@@ -1,3 +1,11 @@
+.background-decor() {
+  position: absolute;
+  color: @bg-block-color;
+  z-index: 0;
+  font-size: 281px;
+  font-family: @font-add;
+}
+
 .features-list {
   list-style: none;
   padding: 0;
@@ -74,6 +82,8 @@
     line-height: 24px;
     font-size: 16px;
     width: 250px;
+    position: relative;
+    z-index: 1;
   }
 
   .features-list__item--useful::before,
@@ -83,6 +93,34 @@
     position: static;
     width: 80px;
     height: 80px;
+  }
+
+  .features-list__item--useful::after {
+    .background-decor();
+    top: 92px;
+    left: 118px;
+    content: "1";
+  }
+
+  .features-list__item--fast::after {
+    .background-decor();
+    top: 92px;
+    left: 111px;
+    content: "2";
+  }
+
+  .features-list__item--change-food::after {
+    .background-decor();
+    top: 92px;
+    left: 113px;
+    content: "3";
+  }
+
+  .features-list__item--result::after {
+    .background-decor();
+    top: 92px;
+    left: 113px;
+    content: "4";
   }
 }
 
