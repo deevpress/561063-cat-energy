@@ -11,16 +11,16 @@
   margin: 0;
   margin-bottom: -5px;
   padding: 0;
+
+  &--link-clear {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .product__img img {
   margin: 0;
   padding: 0;
-}
-
-.product--link-clear {
-  text-decoration: none;
-  color: black;
 }
 
 .product__title {
@@ -33,6 +33,11 @@
   font-weight: normal;
   line-height: 20px;
   text-transform: uppercase;
+
+  &--link-clear {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .product__desc {
@@ -84,7 +89,7 @@
   //opacity: 0.2;
 }
 
-.product__show-more:before {
+.product__show-more::before {
   content: url("../img/icon-plus-mobile.svg");
   display: block;
   margin: 0 auto;
@@ -178,7 +183,7 @@
     background-size: 60px 60px;
   }
 
-  .product__show-more:before {
+  .product__show-more::before {
     content: url("../img/icon-plus-mobile.svg");
     display: block;
     margin: 0 auto;
