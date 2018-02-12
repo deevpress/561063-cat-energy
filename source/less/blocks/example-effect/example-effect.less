@@ -1,5 +1,121 @@
 .example-effect {
   font-family: @font-base;
-  margin-top: 34px;
-  margin-left: -20px;
+}
+
+.example-effect__img {
+  margin-bottom: -2px;
+  height: 246px;
+  width: @mobile-width;
+}
+
+.example-effect__img-left {
+  margin: 0;
+  background: url("../img/before-mobile@1x.png") no-repeat -4px 0;
+  background-size: 322px;
+  height: 100%;
+  //margin-top: 200px;
+  margin-left: 2px;
+}
+
+.example-effect__toggle {
+  width: 198px;
+  margin-left: 63px;
+  margin-top: 26px;
+  padding-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .example-effect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, @bg-block-color 50%, #eaeaea 50%);
+  }
+
+  .example-effect__img {
+    height: 516px;
+    width: 670px;
+    margin-top: -168px;
+    margin-left: 0;
+  }
+
+  .example-effect__img-left {
+    margin: 0;
+    background: url("../img/before-mobile@1x.png") no-repeat -4px 0;
+    background-size: 693px;
+    clip: rect(auto, 335px, auto, auto);
+    width: 100%;
+    height: 631px;
+    z-index: 10;
+    position: absolute;
+
+    display: block;
+  }
+
+  .example-effect__img-right {
+    margin: 0;
+    background: url("../img/after-mobile@1x.png") no-repeat -4px 0;
+    background-size: 693px;
+    clip: rect(auto, auto, auto, 335px);
+    width: 100%;
+    height: 631px;
+    z-index: 10;
+    position: absolute;
+    display: block;
+  }
+
+
+  .example-effect__toggle {
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 69px;
+    padding: 0;
+    width: 569px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-effect {
+    background: linear-gradient(to right, @bg-block-color 56%, #eaeaea 56%);
+  }
+
+  .example-effect__img {
+    height: 525px;
+    width: 682px;
+    margin-top: -270px;
+    margin-left: 63px;
+  }
+
+  .example-effect__img-left {
+    margin: 0;
+    background: url("../img/before-mobile@1x.png") no-repeat -4px 7px;
+    background-size: 693px;
+    clip: rect(auto, 362px, auto, auto);
+    width: 100%;
+    height: 631px;
+    z-index: 10;
+    position: absolute;
+
+    display: block;
+  }
+
+  .example-effect__img-right {
+    margin: 0;
+    background: url("../img/after-mobile@1x.png") no-repeat -4px 7px;
+    background-size: 693px;
+    clip: rect(auto, auto, auto, 362px);
+    width: 100%;
+    height: 631px;
+    z-index: 10;
+    position: absolute;
+    display: block;
+  }
+
+  .example-effect__toggle {
+    margin: 0;
+    margin-left: 103px;
+    margin-top: 36px;
+  }
 }

@@ -1,14 +1,15 @@
 .page-header {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  //padding-left: 20px;
+  //padding-right: 20px;
   border-width: 0;
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: white;
   width: @mobile-width;
-  height: 66px;
+  //height: 66px;
   box-sizing: border-box;
   position: relative;
   z-index: 10;
@@ -16,6 +17,8 @@
 
 .page-header__logo {
   margin-top: 11px;
+  margin-left: 20px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   width: 191px;
@@ -23,6 +26,18 @@
   &-image {
     text-decoration: none;
   }
+}
+
+.page-header__main-nav {
+  margin: 0;
+}
+
+.page-header__toggle {
+  margin-top: 23px;
+  top: -66px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
 }
 
 .page-header__logo-text {

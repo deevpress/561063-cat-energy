@@ -11,8 +11,47 @@
   margin-top: 27px;
 }
 
+@media (min-width: @tablet-width) {
+  .example-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .example-info__title {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  .example-info__desc {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .example-info {
-    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 435px;
+    height: 542px;
+  }
+
+  .example-info__title {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .example-info__desc {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .example-facts {
+    margin: 0;
   }
 }

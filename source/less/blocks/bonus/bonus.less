@@ -1,28 +1,79 @@
 .bonus {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin: 0 20px;
+  /*margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 33px;
+  width: 280px;
+  min-height: 289px;
+  */
+  text-align: center;
 }
 
 .bonus__text {
   margin: 0;
-  padding: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 56px;
+  padding-top: 57px;
+  padding-bottom: 7px;
+
   text-align: center;
   color: white;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: @font-base;
+}
+
+.bonus__image {
+  margin: auto;
+  margin-top: 65px;
+  width: 55px;
+  height: 60px;
 }
 
 @media (min-width: @tablet-width) {
   .bonus {
-    background-size: 100%;
-    background-position: 50%;
+    //margin-top: 70px;
+    //margin-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    //min-width: 708px;
+    //min-height: 200px;
+    background-size: cover;
+  }
+
+  .bonus__image {
+    margin: 0;
+    padding: 0;
+    padding-left: 91px;
+  }
+
+  .bonus__text {
+    margin: 0;
+    padding: 0;
+    padding-right: 125px;
+    padding-top: 7px;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .bonus {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .bonus__image {
+    margin: 0;
+    padding: 0;
+    flex-grow: 3;
+  }
+
   .bonus__text {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
   }
 }

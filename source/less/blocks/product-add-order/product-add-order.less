@@ -1,3 +1,23 @@
-.product-add-order__item {
-  flex-basis: @tablet-width/3 + @tablet-width/3/3;
+.product-add-order__list {
+  text-transform: uppercase;
+  font-family: @font-add;
+  line-height: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-add-order__item {
+    flex-basis: 284px;
+    height: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-add-order__list {
+    display: flex;
+  }
+
+  .product-add-order__item {
+    flex-basis: 244px;
+    height: 72px;
+  }
 }

@@ -1,13 +1,44 @@
 .example {
   background-color: @bg-block-color;
   padding: 21px;
-  margin-top: 45px;
   font-family: @font-add;
+}
+
+.example__effect {
+  margin-top: 34px;
+  margin-left: -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: white;
+  }
+
+  .example__example-info {
+    margin-bottom: 194px;
+    height: 396px;
+  }
+
+  .example__effect {
+    margin: 0 -30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     display: flex;
     justify-content: space-between;
+    background-color: @bg-block-color;
+  }
+
+  .example__example-info {
+    margin-top: -153px;
+    margin-bottom: 70px;
+    margin-left: 110px;
+  }
+
+  .example__effect {
+    margin: 0;
+    flex-grow: 1;
   }
 }

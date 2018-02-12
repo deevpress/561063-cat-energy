@@ -1,30 +1,228 @@
-.product__link {
-  text-decoration: none;
-  color: black;
-}
-
-.product__title {
-  text-transform: uppercase;
-}
-
 .product {
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid black;
   flex-basis: 250px;
 }
 
+.product__img {
+  float: left;
+  margin: 0;
+  margin-bottom: -5px;
+  padding: 0;
+
+  &--link-clear {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.product__img img {
+  margin: 0;
+  padding: 0;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  display: inline-block;
+  width: 80px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--link-clear {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.product__desc {
+  margin-left: 135px;
+}
+
+.product__features {
+  margin: 0;
+  margin-top: 11px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  font-family: @font-base;
+  list-style: none;
+}
+
+.product__feature-name {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.product__feature-value {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.product__button {
+  width: 280px;
+  clear: both;
+  display: block;
+  padding: 8px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.product__show-more {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  //height: 30px;
+
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  //background: url("../img/icon-plus-mobile.svg");
+  //opacity: 0.2;
+}
+
+.product__show-more::before {
+  content: url("../img/icon-plus-mobile.svg");
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+}
+
+.product__show-more-title {
+  margin: 0;
+  margin-top: -4px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+}
+
+.product__show-more-desc {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 22px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: @font-base;
+}
+
+
 @media (min-width: @tablet-width) {
   .product {
-    margin-top: 139px;
-    flex-basis: 324px;
-    min-height: 432px;
+    margin-top: 140px;
+    padding: 0 19px;
+    padding-bottom: 23px;
+    flex-basis: 284px;
+    min-height: 408px;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     text-align: center;
+    border: none;
+  }
+
+  .product__desc {
+    margin: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .product__title {
+    margin: 0;
+    //margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 135px;
+  }
+
+  .product__features {
+    margin-top: 22px;
+    font-size: 16px;
+    font-family: @font-base;
+  }
+
+  .product__features li {
+    margin-bottom: 8px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+
+  .product__button {
+    margin: 0 18px;
+    margin-bottom: 10px;
+    width: 249px;
+  }
+
+
+  .product__show-more {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 53px;
+    margin-bottom: 0;
+    //width: 60px;
+    //height: 60px;
+    background-size: 60px 60px;
+  }
+
+  .product__show-more::before {
+    content: url("../img/icon-plus-mobile.svg");
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
+  }
+
+  .product__show-more-title {
+    margin: 0 auto;
+    width: 170px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product__show-more-desc {
+    margin-top: 26px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  .product--bg-show-more {
+    background-color: white;
+    border: 1px solid @bg-block-color;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product {
-    flex-basis: 250px;
+    margin-top: 141px;
+    flex-basis: 207px;
+  }
+
+  .product__button {
+    width: 169px;
   }
 }
