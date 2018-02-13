@@ -1,28 +1,37 @@
 .example-facts__list {
-  list-style: none;
-  margin: 0;
   margin-top: 25px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   padding: 0;
+
+  text-align: center;
+
   display: flex;
   justify-content: space-between;
-  text-align: center;
+
+  list-style: none;
 }
 
 .example-facts__item {
-  padding-bottom: 0;
-  text-align: center;
-  width: 123px;
-  height: 38px;
   margin: 0;
+  width: 123px;
+  padding-bottom: 0;
+  height: 38px;
+
+  text-align: center;
+
   position: relative;
 }
 
 .example-facts__item-value {
   padding-top: 7px;
   padding-bottom: 11px;
-  display: block;
+
   font-size: 24px;
   text-transform: uppercase;
+
+  display: block;
   border: 1px solid silver;
 }
 
@@ -31,17 +40,23 @@
   left: 16px;
   width: 80px;
   padding: 0 5px;
-  display: block;
-  position: absolute;
+
   background-color: @bg-block-color;
+
   font-family: @font-base;
   font-size: 12px;
   line-height: 12px;
+
+  display: block;
+  position: absolute;
 }
 
 .example-facts__cost {
-  margin: 0;
-  margin-top: 52px;
+  margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -50,11 +65,10 @@
 @media (min-width: @tablet-width) {
   .example-facts {
     margin: 0;
+    min-height: 133px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 133px;
-    //margin-top: 55px;
   }
 
   .example-facts__list {
@@ -70,7 +84,7 @@
   .example-facts__item-value {
     padding-top: 10px;
     padding-bottom: 17px;
-    font-size: 29px;
+    font-size: 30px;
   }
 
   .example-facts__item-desc {
@@ -83,12 +97,16 @@
   }
 
   .example-facts__cost {
-    margin: 0;
     margin-top: 6px;
-    flex-grow: 0;
-    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     width: 180px;
+
     text-align: right;
+    font-size: 20px;
+
+    flex-grow: 0;
   }
 }
 
@@ -96,13 +114,15 @@
   .example-facts {
     margin-top: 74px;
     height: 157px;
+
     flex-direction: column;
   }
 
   .example-facts__cost {
+    width: 327px;
+
     display: flex;
     justify-content: space-between;
-    width: 327px;
   }
 
   .example-facts__item-desc {

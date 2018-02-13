@@ -5,10 +5,11 @@
 }
 
 .example-info__desc {
+  margin-top: 27px;
+  line-height: 18px;
+
   font-family: @font-base;
   font-size: 14px;
-  line-height: 18px;
-  margin-top: 27px;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,9 +26,14 @@
   }
 
   .example-info__desc {
-    margin: 0;
+    margin-top: -1px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-right: 8px;
+    line-height: 24px;
+
     font-size: 16px;
-    line-height: 23px;
   }
 }
 
@@ -37,18 +43,24 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 435px;
-    height: 542px;
+    min-height: 542px;
   }
 
   .example-info__title {
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
     font-size: 60px;
     font-weight: 300;
-    margin: 0;
   }
 
   .example-info__desc {
-    margin: 0;
     margin-top: 64px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .example-facts {
