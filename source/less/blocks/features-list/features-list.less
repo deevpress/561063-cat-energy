@@ -20,8 +20,11 @@
 }
 
 .features-list__item p {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-left: 80px;
+
   padding-top: 2px;
 }
 
@@ -36,11 +39,13 @@
 .features-list__item--fast::before,
 .features-list__item--change-food::before,
 .features-list__item--result::before {
+  width: 60px;
+  height: 60px;
+
   position: absolute;
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
+
   background-color: #68b738;
 }
 
@@ -103,9 +108,11 @@
   .features-list__item p {
     margin-left: 0;
     margin-top: 31px;
+    min-width: 250px;
     line-height: 24px;
+
     font-size: 16px;
-    width: 250px;
+
     position: relative;
     z-index: 1;
   }

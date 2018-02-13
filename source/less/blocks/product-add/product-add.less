@@ -20,10 +20,11 @@
 }
 
 .product-add__title {
-  margin: 0;
   margin-top: 9px;
+  margin-right: 0;
   margin-bottom: 2px;
   margin-left: 1px;
+
   padding: 0;
   font-size: 16px;
   font-weight: normal;
@@ -38,15 +39,19 @@
 .product-add__cost {
   margin-top: 6px;
   margin-right: -2px;
-  float: right;
+
   font-size: 14px;
   font-family: @font-base;
+
+  float: right;
 }
 
 .product-add__bonus {
-  margin: 0 auto;
   margin-top: 40px;
+  margin-right: auto;
   margin-bottom: 33px;
+  margin-left: auto;
+
   width: 280px;
   min-height: 289px;
 }
@@ -59,16 +64,18 @@
   }
 
   .product-add__item {
-    //padding: 58px 38px;
-    padding: 16px 37px;
+    margin-bottom: -1px;
     padding-top: 22px;
+    padding-right: 37px;
     padding-bottom: 26px;
+    padding-left: 37px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
     border: 1px solid black;
-    margin-bottom: -1px;
   }
 
   .product-add__desc {
@@ -91,23 +98,28 @@
 
   .product-add__value {
     margin-top: 6px;
+
     font-family: @font-base;
     font-size: 16px;
     text-align: right;
+
     flex-grow: 1;
   }
 
   .product-add__cost {
-    flex-basis: 93px;
     font-size: 16px;
     font-family: @font-base;
     text-align: right;
+
+    flex-basis: 93px;
   }
 
   .product-add__bonus {
-    margin: 0 auto;
     margin-top: 71px;
+    margin-right: auto;
     margin-bottom: 76px;
+    margin-left: auto;
+
     padding-top: 65px;
     padding-bottom: 71px;
     min-width: 708px;
@@ -129,16 +141,15 @@
 
   .product-add__item {
     margin: 0;
-    //margin-bottom: -1px;
     padding: 0;
-    //padding-top: 6px;
-    //padding-bottom: 5px;
     height: 71px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+
     border-left: none;
     border-right: none;
     border-bottom: none;

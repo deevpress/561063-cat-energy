@@ -1,13 +1,15 @@
 .banner {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  padding-top: 26px;
+  width: @mobile-width;
+  position: relative;
+
   font-family: @font-add;
   color: white;
-  background-position: top;
   text-align: center;
-  position: relative;
-  width: @mobile-width;
-  padding-top: 26px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -16,6 +18,7 @@
 
 .banner__title {
   margin: 0;
+
   text-align: center;
   font-size: 36px;
   line-height: 36px;
@@ -25,6 +28,7 @@
 .banner__slogan {
   margin-top: 22px;
   margin-bottom: 299px;
+
   text-align: center;
   text-transform: uppercase;
   font-family: @font-add;
@@ -32,35 +36,31 @@
 }
 
 .banner__img {
-  position: absolute;
   top: 167px;
   left: 20px;
+  position: absolute;
 }
 
 .banner-dummy {
-  display: inline-block;
   width: 100%;
   height: 285px;
+
+  display: inline-block;
 }
 
 .banner__button {
-  display: block;
   margin: 0 20px;
   font-size: 14px;
-}
 
-/*
-.banner__img img {
-  width: 100%;
-  height: 100%;
+  display: block;
 }
-*/
 
 @media (min-width: @tablet-width) {
   .banner {
-    background-image: none;
-    width: 541px;
     padding-top: 31px;
+    width: 541px;
+
+    background-image: none;
   }
 
   .banner__title,
@@ -70,8 +70,9 @@
   }
 
   .banner__title {
-    font-size: 60px;
+
     line-height: 60px;
+    font-size: 60px;
     font-weight: normal;
     letter-spacing: 0;
   }
@@ -89,15 +90,12 @@
     width: 620px;
   }
 
-  .banner-dummy {
-    height: 1px;
-  }
-
   .banner__button {
     margin-top: 39px;
     margin-left: 3px;
     padding: 11px 20px;
     width: 204px;
+
     position: relative;
     z-index: 1;
 
@@ -115,15 +113,22 @@
   }
 
   .banner::before {
-    position: absolute;
-    content: "";
-    display: block;
     top: -110px;
     right: 0;
     width: 680px;
     height: 696px;
+
+    position: absolute;
+    content: "";
+    display: block;
+
     background: url("../img/index-background-desktop@1x.jpg") no-repeat center center #68b738;
     background-size: cover;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .banner__button {
@@ -139,28 +144,14 @@
   }
 
   .banner__title {
+    margin-left: 0;
+    width: 440px;
+
     font-size: 60px;
     letter-spacing: 0;
-    width: 440px;
-    margin-left: 0;
   }
 
   .banner__slogan {
     margin-left: 0;
-  }
-}
-
-@media (min-width: @desktop-width) and (min-resolution: @retina-dpi),
-  (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
-  .banner::before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: -110px;
-    right: 0;
-    width: 680px;
-    height: 696px;
-    background: url("../img/index-background-desktop@2x.jpg") no-repeat center center #68b738;
-    background-size: cover;
   }
 }

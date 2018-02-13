@@ -1,15 +1,13 @@
 .page-header {
   margin: 0 auto;
-  //padding-left: 20px;
-  //padding-right: 20px;
+  width: @mobile-width;
   border-width: 0;
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: white;
-  width: @mobile-width;
-  //height: 66px;
+
   box-sizing: border-box;
   position: relative;
   z-index: 10;
@@ -57,7 +55,7 @@
   .page-header__logo {
     margin-left: 0;
     margin-top: 24px;
-    width: 170px;
+    min-width: 170px;
     //padding-left: 30px;
   }
 
@@ -85,6 +83,7 @@
   .page-header__logo {
     margin-top: 54px;
     margin-left: 1px;
+
     flex-grow: 2;
     justify-content: flex-start;
   }
