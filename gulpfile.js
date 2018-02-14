@@ -26,9 +26,13 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
 
 gulp.task("serve", function() {
   server.init({
@@ -44,8 +48,9 @@ gulp.task("serve", function() {
 });
 
 
+
 gulp.task("build", function(done) {
-  run("clean", "copy", done);
+  run("clean", "copy", "style", done);
 });
 
 gulp.task("clean", function() {
