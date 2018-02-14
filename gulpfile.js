@@ -7,6 +7,18 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+var del = require("del");
+var imagemin = require("gulp-imagemin");
+var include = require("posthtml-include");
+var minify = require("gulp-csso");
+var posthtml = require("gulp-posthtml");
+var run = require("run-sequence");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var webp = require("gulp-webp");
+
+
+
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
     .pipe(plumber())
