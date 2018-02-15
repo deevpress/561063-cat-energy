@@ -16,11 +16,37 @@
   &--green {
     background-color: @btn-bg-color-green;
     color: white;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: #7ebc57;
+    }
   }
 
   &--gray {
     background-color: @btn-bg-color-gray;
     color: black;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: white;
+    }
   }
 }
 
@@ -30,7 +56,7 @@
     padding: 11px 20px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    //color: white;
 
     text-align: center;
     font-family: @font-add;
