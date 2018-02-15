@@ -7,11 +7,30 @@
   border: none;
   background: url("../img/icon-mobile-menu.svg") no-repeat 0 0;
   background-color: transparent;
-  position: absolute;
+  //background-color: yellow;
   cursor: pointer;
-
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+/*
   &--down {
     background: url("../img/icon-close.svg") no-repeat 0 0;
+  }
+*/
+}
+
+.main-nav__toggle-checkbox {
+
+
+  &:checked {
+    + .main-nav__toggle {
+      position: absolute;
+      background: url("../img/icon-close.svg") no-repeat 0 0;
+    }
+
+    ~ .site-list {
+      display: block;
+    }
   }
 }
 
