@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Cat Energy</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <script src="js/picturefill.js" async></script>
 </head>
 <body>
   <header class="page-header">
@@ -21,17 +24,20 @@
     </a>
 
     <nav class="main-nav page-header__main-nav">
-      <button class="main-nav__toggle page-header__toggle" type="button"></button>
+      <input class="main-nav__toggle-checkbox visually-hidden" id="burger" type="checkbox">
+      <label class="main-nav__toggle  page-header__toggle" for="burger"></label>
+
+      <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
         <ul class="main-nav__list site-list">
-          <li>
+          <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
-          <li>
-            <a class="site-list__item-link " href="catalog.html">Каталог продукции</a>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li>
-            <a class="site-list__item-link site-list__item-active site-list__item-active--green" href="form.html">Подбор программы</a>
+          <li class="site-list__item">
+            <a class="site-list__item-link  site-list__item-active  site-list__item-active--green" href="form.html">Подбор программы</a>
           </li>
         </ul>
       <!--</div>-->
@@ -47,17 +53,17 @@
         <fieldset class="form-group form-group--cat-info form__cat-info">
           <div class="form-group__control">
             <label >Имя:*</label>
-            <input type="text" name="name" placeholder="Барсик" required>
+            <input class="form-group__input  form-group__input--name" type="text" name="name" placeholder="Барсик" required>
           </div>
 
           <div class="form-group__control">
             <label>Вес (кг):*</label>
-            <input type="number" name="weight" placeholder="7" required>
+            <input class="form-group__input  form-group__input--weight" type="number" name="weight" placeholder="7" required>
           </div>
 
           <div class="form-group__control">
             <label>Возраст (лет):</label>
-            <input type="number" name="age" placeholder="7">
+            <input class="form-group__input  form-group__input--age" type="number" name="age" placeholder="7">
           </div>
         </fieldset>
 
@@ -82,12 +88,20 @@
 
         <div class="columns columns--equal-width-desktop">
           <label class="form-group__label"><span>E-mail:*</span>
-            <input class="form-group__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            <img class="form-group__email-ico" src="img/icon-mail.svg" width="24" height="24">
+            <input class="form-group__input  form-group__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <!-- <img class="form-group__email-ico" src="img/icon-mail.svg" width="24" height="24"> -->
+            <svg class="form-group__email-ico" width="17" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
           </label>
+
           <label class="form-group__label"><span>Телефон:*</span>
-            <input class="form-group__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            <img class="form-phone-ico" src="img/icon-phone.svg" width="24" height="24">
+            <input class="form-group__input  form-group__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <!-- <img class="form-phone-ico" src="img/icon-phone.svg" width="24" height="24"> -->
+            <svg class="form-group__phone-ico" width="20" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+
           </label>
         </div>
       </fieldset>
@@ -95,7 +109,7 @@
 
       <fieldset class="form-group form-group--cat-comment form__cat-comment">
         <h3 class="form-group__title form-group__title--decor-comments-right">Комментарий</h3>
-        <textarea class="form-group__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form-group__input form-group__input--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form-group product-add-order form__product-add">
