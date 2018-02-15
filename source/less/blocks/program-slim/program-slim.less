@@ -114,27 +114,32 @@
 }
 
 .program-slim__catalog-link::after {
-    margin-top: 7px;
-    margin-left: 12px;
-    width: 24px;
-    height: 11px;
+  margin-top: 7px;
+  margin-left: 12px;
+  width: 24px;
+  height: 11px;
 
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.program-slim__catalog-link:hover::after, .categories__link:focus::after {
-    margin-top: 7px;
-    margin-left: 12px;
-    width: 33px;
-    height: 11px;
+.program-slim__catalog-link:hover::after,
+.categories__link:focus::after {
+  margin-top: 7px;
+  margin-left: 12px;
+  width: 33px;
+  height: 11px;
 
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -215,7 +220,8 @@
     margin-left: 24px;
   }
 
-  .program-slim__catalog-link:hover::after, .categories__link:focus::after {
+  .program-slim__catalog-link:hover::after,
+  .categories__link:focus::after {
     margin-top: 11px;
     margin-left: 24px;
   }
