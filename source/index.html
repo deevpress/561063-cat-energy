@@ -121,7 +121,7 @@
           <ul class="example-facts__list">
             <li class="example-facts__item">
               <span class="example-facts__item-value">5 кг</span>
-              <span class="example-facts__item-desc">снижение веса</span>
+              <span class="example-facts__item-desc  example-facts__item-desc--weight">снижение веса</span>
             </li>
             <li class="example-facts__item">
               <span class="example-facts__item-value">60 дней</span>
@@ -171,7 +171,8 @@
           Приглашаем <br>к сотрудничеству<br>дилеров!
         </div>
         <div class="partnership__address">
-          ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург
+          <span>ул. Большая Конюшенная, д. 19/8 <br><br></span>
+          <span>Санкт-Петербург</span>
         </div>
       </div>
 
@@ -195,17 +196,20 @@
         <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
-                <img src="img/icon-vk-mobile.svg" width="24" height="24">
+                <!--<img src="img/icon-vk-mobile.svg" width="24" height="24">-->
+                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-vk-mobile"></use></svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--inst" href="https://www.instagram.com/htmlacademy">
-                <img src="img/icon-insta-mobile.svg" width="24" height="24">
+                <!-- <img src="img/icon-insta-mobile.svg" width="24" height="24"> -->
+                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--fb" href="https://www.facebook.com/htmlacademy">
-                <img src="img/icon-fb-mobile.svg" width="24" height="24">
+                <!-- <img src="img/icon-fb-mobile.svg" width="24" height="24"> -->
+                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb-mobile"></use></svg>
               </a>
             </li>
         </ul>
@@ -215,7 +219,7 @@
       <div class="page-footer__copyright">
         <a href="https://htmlacademy.ru">
           <span class="page-footer__copyright-title">HTML Academy</span>
-          <img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="34" height="34" alt="">
+          <img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
         </a>
       </div>
     </div>

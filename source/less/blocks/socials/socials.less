@@ -11,7 +11,7 @@
   margin-bottom: 0;
   margin-left: 73px;
   padding: 0;
-  width: 125px;
+  width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,20 +26,30 @@
 .socials__link {
   display: inline-block;
 
-  &--vk img {
+  &--vk svg {
     height: auto;
     width: 22px;
   }
 
-  &--inst img {
+  &--inst svg {
     margin-left: -3px;
     height: auto;
     width: 16px;
   }
 
-  &--fb img {
+  &--fb svg {
     height: auto;
-    width: 10px;
+    width: 20px;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    //opacity: 0.3;
+    fill: #c6e1b8;;
   }
 }
 
@@ -58,20 +68,20 @@
   .socials__link {
     display: inline-block;
 
-    &--vk img {
+    &--vk svg {
       height: auto;
       width: 30px;
     }
 
-    &--inst img {
+    &--inst svg {
       margin-left: -3px;
       height: auto;
       width: 23px;
     }
 
-    &--fb img {
+    &--fb svg {
       height: auto;
-      width: 15px;
+      width: 28px;
     }
   }
 }
