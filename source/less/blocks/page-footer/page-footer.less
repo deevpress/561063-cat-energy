@@ -37,13 +37,38 @@
   color: black;
 }
 
+.page-footer__copyright-title {
+  color: @link-outer-text;
+
+  &:hover,
+  &:focus {
+    color: @link-outer-text-hover
+  }
+
+  &:active {
+    color: @link-outer-text-active;
+  }
+}
+
 .page-footer__copyright-logo {
   margin-top: -7px;
   margin-right: 1px;
 
   display: block;
   float: right;
+  fill: @link-outer-ico;
+
+  &:hover,
+  &:focus {
+    fill: @link-outer-ico-hover;
+  }
+
+  &:active {
+    fill: @link-outer-ico-active;
+  }
 }
+
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
