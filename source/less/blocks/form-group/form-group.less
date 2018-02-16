@@ -154,9 +154,11 @@
   position: relative;
 
   border: 1px solid #e6e6e6;
+  //box-shadow: 0px 0px 0px 1px #e6e6e6;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    //border: 1px solid #cdcdcd;
+    box-shadow: 0px 0px 0px 1px #cdcdcd;
   }
 
   &:hover ~ .form-group__email-ico,
@@ -165,7 +167,8 @@
   }
 
   &:invalid {
-    border: 2px solid #ff8282;
+    //border: 0px solid #ff8282;
+    box-shadow: 0px 0px 0px 2px #ff8282;
   }
 
   &:invalid ~ .form-group__email-ico,
@@ -175,7 +178,8 @@
 
   &:focus {
     outline: none;
-    border: 2px solid black;
+    //border: 2px solid black;
+    box-shadow: 0px 0px 0px 2px black;
   }
 
   &:focus ~ .form-group__email-ico,
