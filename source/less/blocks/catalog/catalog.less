@@ -13,7 +13,8 @@
   font-weight: 300;
   font-size: 36px;
 
-  border-bottom: 1px solid #ededed;
+  //border-bottom: 1px solid #ededed;
+  border: 0;
 }
 
 .catalog__title-add {
@@ -28,7 +29,7 @@
 
   position: relative;
 
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-block-default;
 }
 
 .catalog--main {
@@ -88,7 +89,7 @@
 
 @media (min-width: @desktop-width) {
   .catalog--main {
-    margin: 0 110px;
+    margin: 0 40px;
   }
 
   .catalog__title {
@@ -102,7 +103,7 @@
     margin-top: 65px;
     margin-right: 0;
     margin-bottom: 71px;
-    margin-left: 110px;
+    margin-left: 40px;
     padding: 0;
 
     font-size: 36px;

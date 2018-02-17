@@ -4,7 +4,7 @@
 
 .product-add__item {
   padding-bottom: 17px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-block-default;
 }
 
 .product-add__link {
@@ -75,7 +75,8 @@
     align-items: center;
     flex-wrap: wrap;
 
-    border: 1px solid black;
+    border-top: 1px solid @border-block-default;
+    border-bottom: 1px solid @border-block-default;
   }
 
   .product-add__desc {
@@ -156,7 +157,7 @@
   }
 
   .product-add__item:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid @border-block-default;
   }
 
   .product-add__title {
@@ -183,8 +184,8 @@
 
   .product-add__wrapper {
     margin-bottom: 87px;
-    padding-left: 69px;
-    padding-right: 69px;
+    padding-left: 2px;
+    padding-right: 0;
     display: flex;
     justify-content: space-around;
   }
