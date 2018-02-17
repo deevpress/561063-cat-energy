@@ -13,6 +13,7 @@
   height: 20px;
 }
 
+/*
 .main-nav__toggle-checkbox {
   &:checked {
     + .main-nav__toggle {
@@ -23,6 +24,16 @@
     ~ .main-nav__list {
       display: block;
     }
+  }
+}
+*/
+
+.main-nav__toggle--on {
+  position: absolute;
+  background: url("../img/icon-close.svg") no-repeat 0 0;
+
+  ~ .main-nav__list {
+    display: block;
   }
 }
 
