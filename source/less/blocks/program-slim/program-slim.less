@@ -16,8 +16,10 @@
   margin-bottom: 20px;
   margin-left: 0;
 
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
   padding-bottom: 18px;
+  padding-left: 20px;
   position: relative;
 
   background-color: @bg-block-color;
@@ -38,13 +40,14 @@
 .program-slim__item-desc {
   margin-top: 0;
   margin-bottom: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   font-family: @font-base;
   font-size: 14px;
   line-height: 18px;
+  color: @font-color-text;
 
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-block-default;
 }
 
 //Картинки для блока Программы похудения
@@ -108,9 +111,45 @@
 }
 
 .program-slim__catalog-link {
+  line-height: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;//#eaeaea
+  }
 }
 
+.program-slim__catalog-link::after {
+  margin-top: 7px;
+  margin-left: 12px;
+  width: 24px;
+  height: 11px;
+
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.program-slim__catalog-link:hover::after,
+.program-slim__catalog-link:focus::after {
+  margin-top: 7px;
+  margin-left: 12px;
+  width: 33px;
+  height: 11px;
+
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 @media (min-width: @tablet-width) {
   .program-slim__list {
@@ -170,6 +209,7 @@
   .program-slim__item-desc {
     margin-bottom: 30px;
     padding-right: 293px;
+    padding-bottom: 23px;
 
     font-size: 16px;
     line-height: 24px;
@@ -184,13 +224,24 @@
   .program-slim__catalog-link {
     font-size: 20px;
   }
+
+  .program-slim__catalog-link::after {
+    margin-top: 11px;
+    margin-left: 24px;
+  }
+
+  .program-slim__catalog-link:hover::after,
+  .categories__link:focus::after {
+    margin-top: 11px;
+    margin-left: 24px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .program-slim__list {
     display: flex;
     justify-content: space-between;
-    margin: 0 110px;
+    margin: 0 40px;
   }
 
   .program-slim__item {
@@ -246,7 +297,7 @@
   .program-slim__item-desc {
     padding: 0;
     margin-right: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 31px;
 
     font-size: 16px;
     line-height: 24px;

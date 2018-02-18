@@ -17,6 +17,8 @@
   margin-right: 0;
   margin-left: 0;
   padding-bottom: 24px;
+
+  color: @font-color-text;
 }
 
 .features-list__item p {
@@ -57,6 +59,7 @@
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
+    background-size: 50px 50px;
     background-image: url("../img/advantage-leaf@2x.png");
   }
 }
@@ -69,6 +72,7 @@
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
+    background-size: 50px 50px;
     background-image: url("../img/advantage-powder@2x.png");
   }
 }
@@ -81,6 +85,7 @@
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
+    background-size: 50px 50px;
     background-image: url("../img/advantage-dining@2x.png");
   }
 }
@@ -93,13 +98,15 @@
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
+    background-size: 50px 50px;
     background-image: url("../img/advantage-clock@2x.png");
   }
 }
 
 @media (min-width: @tablet-width) {
   .features-list {
-    min-height: 502px;
+    min-height: 526px;
+    height: 0;//хак для IE11
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -114,8 +121,9 @@
   }
 
   .features-list__item p {
-    margin-left: 0;
     margin-top: 31px;
+    margin-right: 60px;
+    margin-left: 0;
     min-width: 250px;
     line-height: 24px;
 
@@ -170,5 +178,10 @@
 
   .features-list__item {
     flex-basis: 244px;
+  }
+
+  .features-list__item p {
+    margin-top: 31px;
+    margin-right: 0;
   }
 }

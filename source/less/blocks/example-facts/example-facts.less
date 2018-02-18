@@ -25,7 +25,7 @@
 }
 
 .example-facts__item-value {
-  padding-top: 7px;
+  padding-top: 6px;
   padding-bottom: 11px;
 
   font-size: 24px;
@@ -60,6 +60,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -82,18 +83,22 @@
   }
 
   .example-facts__item-value {
-    padding-top: 10px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 14px;
     font-size: 30px;
   }
 
   .example-facts__item-desc {
-    width: 136px;
-    top: 63px;
+    width: auto;
+    top: 65px;
     left: 12px;
     font-size: 14px;
     line-height: 14px;
     background-color: white;
+
+    &--weight {
+      left: 27px;
+    }
   }
 
   .example-facts__cost {

@@ -7,11 +7,13 @@
   color: white;
   text-align: center;
 
+  //background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-size: 100%;
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
@@ -27,7 +29,7 @@
 
 .banner__slogan {
   margin-top: 22px;
-  margin-bottom: 299px;
+  margin-bottom: 298px;
 
   text-align: center;
   text-transform: uppercase;
@@ -36,7 +38,8 @@
 }
 
 .banner__img {
-  top: 167px;
+  top: 165px;
+  right: 20px;
   left: 20px;
   position: absolute;
 }
@@ -50,6 +53,12 @@
 
 .banner__button {
   margin: 0 20px;
+
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+  line-height: 40px;
   font-size: 14px;
 
   display: block;
@@ -93,9 +102,9 @@
   .banner__button {
     margin-top: 39px;
     margin-left: 3px;
-    padding: 11px 20px;
+    padding: 0 20px;
     width: 204px;
-
+    line-height: 50px;
     position: relative;
     z-index: 1;
 
@@ -114,7 +123,8 @@
 
   .banner::before {
     top: -110px;
-    right: 0;
+    left: 48.3%;
+    //right: 0;
     width: 680px;
     height: 696px;
 
@@ -127,6 +137,7 @@
 
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 100%;
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }

@@ -7,11 +7,33 @@
   border: none;
   background: url("../img/icon-mobile-menu.svg") no-repeat 0 0;
   background-color: transparent;
-  position: absolute;
   cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
 
-  &--down {
-    background: url("../img/icon-close.svg") no-repeat 0 0;
+/*
+.main-nav__toggle-checkbox {
+  &:checked {
+    + .main-nav__toggle {
+      position: absolute;
+      background: url("../img/icon-close.svg") no-repeat 0 0;
+    }
+
+    ~ .main-nav__list {
+      display: block;
+    }
+  }
+}
+*/
+
+.main-nav__toggle--on {
+  position: absolute;
+  background: url("../img/icon-close.svg") no-repeat 0 0;
+
+  ~ .main-nav__list {
+    display: block;
   }
 }
 
@@ -24,6 +46,12 @@
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__toggle--on {
+    ~ .main-nav__list {
+      display: flex;
+    }
   }
 
   .main-nav__list {

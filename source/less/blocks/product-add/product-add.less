@@ -3,8 +3,9 @@
 }
 
 .product-add__item {
+  margin-bottom: 11px;
   padding-bottom: 17px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-block-default;
 }
 
 .product-add__link {
@@ -13,35 +14,49 @@
 }
 
 .product-add__button {
-  margin-top: 12px;
-  padding: 8px;
+  margin-top: 13px;//12px;
+  padding: 0;//8px;
   display: block;
+
+  line-height: 40px;
   font-size: 16px;
 }
 
+.product-add__desc {
+  line-height: 24px;
+}
+
 .product-add__title {
+  margin: 0;
+  /*
   margin-top: 9px;
   margin-right: 0;
   margin-bottom: 2px;
   margin-left: 1px;
+  */
 
   padding: 0;
+  line-height: 23px;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .product-add__value {
+  line-height: 16px;
   font-size: 14px;
   font-family: @font-base;
+  color: @font-color-text;
 }
 
 .product-add__cost {
   margin-top: 6px;
   margin-right: -2px;
 
+  line-height: 16px;
   font-size: 14px;
   font-family: @font-base;
+  color: @font-color-text;
 
   float: right;
 }
@@ -65,7 +80,7 @@
 
   .product-add__item {
     margin-bottom: -1px;
-    padding-top: 22px;
+    padding-top: 24px;
     padding-right: 37px;
     padding-bottom: 26px;
     padding-left: 37px;
@@ -75,7 +90,9 @@
     align-items: center;
     flex-wrap: wrap;
 
-    border: 1px solid black;
+    //border-top: 1px solid @border-block-default;
+    //border-bottom: 1px solid @border-block-default;
+    border: 1px solid @border-block-default;
   }
 
   .product-add__desc {
@@ -86,8 +103,8 @@
   }
 
   .product-add__button {
-    margin-top: 20px;
-    padding: 8px;
+    margin-top: 25px;
+    padding: 0;
     flex-basis: 700px;
   }
 
@@ -156,7 +173,7 @@
   }
 
   .product-add__item:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid @border-block-default;
   }
 
   .product-add__title {
@@ -177,14 +194,14 @@
 
   .product-add__button {
     margin: 0;
-    padding: 7px 0;
+    padding: 0;
     flex-basis: 336px;
   }
 
   .product-add__wrapper {
     margin-bottom: 87px;
-    padding-left: 69px;
-    padding-right: 69px;
+    padding-left: 2px;
+    padding-right: 0;
     display: flex;
     justify-content: space-around;
   }

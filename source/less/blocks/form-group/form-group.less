@@ -21,18 +21,27 @@
   position: absolute;
 }
 
+.form-group {
+  color: @font-color-control-title;
+}
+
 .form-group__control {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   font-weight: normal;
   text-transform: uppercase;
+
+  line-height: 16px;
   font-size: 16px;
+  color: @font-color-control-title;
+  white-space: nowrap;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/*
 .form-group__control label {
   margin-right: 15px;
 }
@@ -50,15 +59,20 @@
   flex-grow: 1;
 }
 
+.form-group__control input:invalid {
+    border: 1px solid #ff8282;
+}
+*/
+
 .form-group__title {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
   margin-left: 0;
   position: relative;
 
   font-size: 24px;
-  line-height: 25px;
+  line-height: 24px;
   font-weight: 300;
 
   &--decor-contacts-right::after {
@@ -80,6 +94,7 @@
   margin-right: 0;
   margin-bottom: 28px;
   margin-left: 0;
+  padding: 0;
 
   font-size: 24px;
   line-height: 25px;
@@ -113,8 +128,14 @@
 }
 
 .form-group__email-ico {
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 17px;
+  position: absolute;
+}
+
+.form-group__phone-ico {
+  top: 13px;
+  right: 14px;
   position: absolute;
 }
 
@@ -126,38 +147,95 @@
 }
 */
 
-.form-group__textarea {
-  margin-top: 3px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-
-  padding-top: 9px;
-  padding-right: 0;
-  padding-left: 15px;
-  //padding-left: 0;
-
-  width: 262px;
-  height: 137px;
-
-  resize: none;
-
-  text-transform: uppercase;
-  font-size: 16px;
-  font-family: @font-add;
-}
 
 .form-group__input {
-  margin-left: 12px;
-  padding: 9px 0;
-  padding-left: 13px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
 
+  //line-height: 23px;
+  line-height: 43px;
   font-size: 16px;
   font-family: @font-add;
+  color: @font-color-text;
   text-transform: uppercase;
 
   flex-grow: 1;
   position: relative;
+
+  border: 1px solid #e6e6e6;
+  //box-shadow: 0px 0px 0px 1px #e6e6e6;
+
+  &:hover {
+    border: 1px solid @border-input-hover;
+    //box-shadow: inset 0 0 0 1px @border-input-hover;
+  }
+
+  &:hover ~ .form-group__email-ico,
+  &:hover ~ .form-group__phone-ico {
+    fill: #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid @border-input-error;
+    box-shadow: inset 0 0 0 1px @border-input-error;
+  }
+
+  &:focus:invalid ~ .form-group__email-ico,
+  &:focus:invalid ~ .form-group__phone-ico {
+    fill: @border-input-error;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid @border-input-active;
+    box-shadow: inset 0 0 0 1px @border-input-active;
+  }
+
+  &:focus ~ .form-group__email-ico,
+  &:focus ~ .form-group__phone-ico {
+    fill: #68b738;
+  }
+
+  &--name {
+    margin-left: 14px;
+  }
+
+  &--weight {
+    margin-left: 17px;
+  }
+
+  &--age {
+    margin-left: 15px;
+  }
+
+  &--email {
+    margin-left: 13px;
+  }
+
+
+  &--phone {
+    margin-left: 11px;
+  }
+
+  &--textarea {
+    margin: 0;
+
+    padding-top: 9px;
+    padding-right: 0;
+    padding-left: 16px;
+
+    width: 262px;
+    height: 139px;
+
+    resize: none;
+
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: @font-add;
+  }
 }
 
 
@@ -173,16 +251,6 @@
     font-family: @font-add;
   }
 
-  .form-group__control input {
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 17px;
-    height: 48px;
-
-    font-size: 20px;
-    font-family: @font-add;
-  }
 
   .form-group__title {
     margin-top: 0;
@@ -191,7 +259,7 @@
     margin-left: 0;
 
     font-size: 36px;
-    line-height: 46px;
+    line-height: 47px;
     font-weight: 300;
 
     position: relative;
@@ -223,7 +291,6 @@
   }
 
   .form-group__label {
-    margin: 0;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 19px;
@@ -239,8 +306,14 @@
 
   .form-group__email-ico {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    right: 21px;
+  }
+
+  .form-group__phone-ico {
+    top: 17px;
+    right: 17px;
+    position: absolute;
   }
 
   .form-phone-ico {
@@ -250,28 +323,51 @@
   }
 
   .form-group__input {
-    margin-left: 18px;
-    margin-right: 5px;
-
-    padding-left: 13px;
-
-    font-size: 20px;
-  }
-
-  .form-group__textarea {
-    padding-top: 10px;
+    padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
-    padding-left: 18px;
-    width: 609px;
-    height: 160px;
-
-    resize: none;
+    padding-left: 17px;
+    min-height: 50px;
 
     font-size: 20px;
     font-family: @font-add;
-    text-transform: uppercase;
+
+    &--name {
+      margin-left: -2px;
+    }
+
+    &--weight {
+      margin-left: 1px;
+    }
+
+    &--age {
+      margin-left: -2px;
+    }
+
+    &--email {
+      margin-left: 22px;
+    }
+
+    &--phone {
+      margin-left: 14px;
+    }
+
+    &--textarea {
+      padding-top: 10px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 18px;
+      width: 609px;
+      height: 160px;
+
+      resize: none;
+
+      font-size: 20px;
+      font-family: @font-add;
+      text-transform: uppercase;
+    }
   }
+
 
   .form-group__title-add {
     margin-top: 0;
@@ -280,7 +376,7 @@
     margin-left: 0;
 
     font-size: 36px;
-    line-height: 42px;
+    line-height: 45px;
     font-weight: 300;
 
     &--decor-right::after {
@@ -298,23 +394,48 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-group__title {
+    margin-top: -1px;
+    margin-right: -2px;
+    margin-bottom: 71px;
+    margin-left: -2px;
+
+    &--decor-contacts-right::before {
+      top: 28px;
+      left: -39px;
+    }
+
+    &--decor-contacts-right::after {
+      top: 28px;
+      //left: -39px;
+    }
+  }
+
+  .form-group__email-ico {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+  }
+
   .form-group__label {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 2px;
+    margin-left: 0;
 
     flex-basis: 570px;
   }
 
-  .form-group__textarea {
-    margin: 0;
-    padding-top: 10px;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 18px;
-    width: 100%;
-    height: 174px;
-    box-sizing: border-box;
+  .form-group__input {
+    &--textarea {
+      margin: 0;
+      padding-top: 10px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 18px;
+      width: 100%;
+      height: 174px;
+      box-sizing: border-box;
+    }
   }
 }

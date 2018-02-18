@@ -1,17 +1,17 @@
 .socials {
   padding-top: 20px;
   padding-bottom: 14px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid @border-block-default;
 }
 
 .socials__list {
-
-  margin: 0 auto;
+  margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
-  margin-left: 73px;
+  margin-left: 72px;
   padding: 0;
-  width: 125px;
+  width: 131px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,20 +26,33 @@
 .socials__link {
   display: inline-block;
 
-  &--vk img {
-    height: auto;
+
+  &--vk svg {
+    height: 24px;
     width: 22px;
+    fill: @link-outer-ico;
   }
 
-  &--inst img {
-    margin-left: -3px;
-    height: auto;
+  &--inst svg {
+    margin-left: 4px;
+    height: 16px;
     width: 16px;
+    fill: @link-outer-ico;
   }
 
-  &--fb img {
-    height: auto;
-    width: 10px;
+  &--fb svg {
+    height: 18px;
+    width: 18px;
+    fill: @link-outer-ico;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: @link-outer-ico-hover;
+  }
+
+  &:active svg {
+    fill: @link-outer-ico-active;
   }
 }
 
@@ -49,7 +62,7 @@
   }
 
   .socials__list {
-    margin: 0 auto;
+    margin-top: 0;
     margin-right: auto;
     margin-bottom: 2px;
     margin-left: 69px;
@@ -58,20 +71,20 @@
   .socials__link {
     display: inline-block;
 
-    &--vk img {
-      height: auto;
-      width: 30px;
+    &--vk svg {
+      height: 20px;
+      width: 32px;
     }
 
-    &--inst img {
-      margin-left: -3px;
-      height: auto;
+    &--inst svg {
+      margin-left: 3px;
+      height: 23px;
       width: 23px;
     }
 
-    &--fb img {
-      height: auto;
-      width: 15px;
+    &--fb svg {
+      height: 28px;
+      width: 28px;
     }
   }
 }

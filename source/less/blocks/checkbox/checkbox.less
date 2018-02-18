@@ -14,16 +14,28 @@
   padding: 0 0 0 47px;
   position: relative;
   cursor: pointer;
-}
 
-.checkbox__text::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #e6e6e6;
+  &:active {
+    color: @control-text-color-down;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid @border-switcher;
+  }
+
+  &:hover::before {
+    border: 1px solid @border-switcher-hover;
+  }
+
+  &:active::before {
+    border: 1px solid @border-switcher-down;
+  }
 }
 
 .checkbox__text::after {

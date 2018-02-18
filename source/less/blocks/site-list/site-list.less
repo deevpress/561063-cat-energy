@@ -2,6 +2,7 @@
   width: 320px;
 
   font-family: @font-add;
+  color: @font-color-title;
 
   text-transform: uppercase;
   background-color: white;
@@ -16,12 +17,21 @@
   font-weight: 900;
   text-decoration: none;
   text-align: center;
-  color: black;
-  border-top: 1px solid black;
+  color: @font-color-title;
+  border-top: 1px solid @border-block-default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item:last-child {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-block-default;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,16 +52,20 @@
     font-size: 18px;
     font-weight: 300;
     text-decoration: none;
-    color: black;
   }
 
   .site-list li:last-child {
     border: 0;
   }
 
-  .site-list__item-active {
+  .site-list__item-link-active {
     padding-bottom: 7px;
     border-bottom: 2px solid #68b738;
+
+    &--green {
+      padding-bottom: 7px;
+      border-bottom: 2px solid #68b738;
+    }
   }
 }
 
@@ -65,9 +79,13 @@
   .site-list__item-link {
     margin-left: 34px;
     font-size: 20px;
+
+    &--white {
+      color: white;
+    }
   }
 
-  .site-list__item-active {
+  .site-list__item-link-active {
     padding-bottom: 5px;
     border-bottom: 2px solid white;
 
@@ -75,9 +93,5 @@
       padding-bottom: 7px;
       border-bottom: 2px solid #68b738;
     }
-  }
-
-  .site-list__item--white {
-    color: white;
   }
 }

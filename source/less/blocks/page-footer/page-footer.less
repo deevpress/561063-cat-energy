@@ -14,10 +14,14 @@
 
 .page-footer__logo {
   margin: 0 auto;
-  padding: 39px 0 32px 0;
+  padding-top: 39px;
+  padding-right: 0;
+  padding-bottom: 32px;
+  padding-left: 0;
   display: block;
 
-  border-bottom: 1px solid grey;
+  line-height: 14px;
+  border-bottom: 1px solid @border-block-default;
 }
 
 .page-footer__text {
@@ -25,11 +29,17 @@
   margin: 0 auto;
 }
 
+.page-footer__socials {
+  line-height: 18px;
+}
+
 .page-footer__copyright {
-  margin-top: 29px;
-  margin-right: 0;
-  margin-bottom: 31px;
-  margin-left: 0;
+  margin-top: 30px;
+  margin-right: -1px;
+  margin-bottom: 29px;//36px;
+  margin-left: -1px;
+
+  line-height: 14px;
 }
 
 .page-footer__copyright a {
@@ -37,13 +47,37 @@
   color: black;
 }
 
+.page-footer__copyright-title {
+  color: @link-outer-text;
+
+  &:hover,
+  &:focus {
+    color: @link-outer-text-hover;
+  }
+
+  &:active {
+    color: @link-outer-text-active;
+  }
+}
+
 .page-footer__copyright-logo {
-  margin-top: -6px;
-  margin-right: -4px;
+  margin-top: -7px;
+  margin-right: 1px;
 
   display: block;
   float: right;
+  fill: @link-outer-ico;
+
+  &:hover,
+  &:focus {
+    fill: @link-outer-ico-hover;
+  }
+
+  &:active {
+    fill: @link-outer-ico-active;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -51,7 +85,10 @@
   }
 
   .page-footer__links {
-    padding: 30px;
+    padding-top: 30px;
+    padding-right: 29px;
+    padding-bottom: 30px;
+    padding-left: 29px;
     min-height: 90px;
 
     display: flex;
@@ -66,15 +103,14 @@
   }
 
   .page-footer__logo img {
-    height: 23px;
-    width: 140px;
+    height: 24px;
+    /* width: 140px; */
     margin-top: 3px;
-    margin-left: -5px;
+    margin-left: 1px;
   }
 
   .page-footer__socials {
-    //margin-left: 33px;
-    margin-right: 56px;
+    margin-right: 46px;
   }
 
   .page-footer__copyright {
@@ -94,7 +130,11 @@
   }
 
   .page-footer__links {
-    padding: 30px 110px;
+    //padding: 30px 40px;
+    padding-top: 28px;
+    padding-right: 40px;
+    padding-bottom: 31px;
+    padding-left: 40px;
   }
 
   .page-footer__copyright {
