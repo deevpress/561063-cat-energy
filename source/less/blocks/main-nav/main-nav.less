@@ -48,6 +48,12 @@
     display: none;
   }
 
+  .main-nav__toggle--on {
+    ~ .main-nav__list {
+      display: flex;
+    }
+  }
+
   .main-nav__list {
     padding: 0;
     margin: 0;

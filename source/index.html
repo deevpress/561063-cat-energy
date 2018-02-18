@@ -25,7 +25,7 @@
 
     <nav class="main-nav  page-header__main-nav">
       <!-- <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox" checked> -->
-      <button class="main-nav__toggle main-nav__toggle--on page-header__toggle" for="burger"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+      <button class="main-nav__toggle main-nav__toggle--of page-header__toggle" for="burger"><span class="visually-hidden">Открыть/закрыть меню</span></button>
 
       <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
@@ -191,21 +191,21 @@
         <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link  socials__link--vk" href="https://vk.com/htmlacademy">
-                <!--<img src="img/icon-vk-mobile.svg" width="24" height="24">-->
                 <span class="visually-hidden">Страница htmlacademy на сайте Вконтакте</span>
                 <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-vk-mobile"></use></svg>
               </a>
             </li>
+
             <li class="socials__item">
               <a class="socials__link  socials__link--inst" href="https://www.instagram.com/htmlacademy">
-                <!-- <img src="img/icon-insta-mobile.svg" width="24" height="24"> -->
                 <span class="visually-hidden">Страница htmlacademy на сайте Инстаграмм</span>
-                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
+                <svg width="20" height="20"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
+                <!-- <img class="page-header__logo-icon" src="img/icon-insta-mobile.svg" width="33" height="38" />-->
               </a>
             </li>
+
             <li class="socials__item">
               <a class="socials__link  socials__link--fb" href="https://www.facebook.com/htmlacademy">
-                <!-- <img src="img/icon-fb-mobile.svg" width="24" height="24"> -->
                 <span class="visually-hidden">Страница htmlacademy на сайте Фейсбук</span>
                 <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb-mobile"></use></svg>
               </a>
@@ -228,5 +228,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/svg-icon-polyfill.js"></script>
 </body>
 </html>
