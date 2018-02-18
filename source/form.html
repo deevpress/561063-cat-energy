@@ -147,15 +147,15 @@
 
   <footer class="page-footer">
     <!--Партнерская программа-->
-    <div class="partnership">
-      <div class="partnership__text  partnership__text--form">
-        <div class="partnership__title">
+    <div class="partnership  partnership--main">
+      <div class="partnership__text">
+        <p class="partnership__title">
           Приглашаем <br>к сотрудничеству<br>дилеров!
-        </div>
-        <div class="partnership__address">
+        </p>
+        <address class="partnership__address">
           <span>ул. Большая Конюшенная, д. 19/8 <br><br></span>
           <span>Санкт-Петербург</span>
-        </div>
+        </address>
       </div>
 
       <div class="map">
@@ -173,19 +173,22 @@
         <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link  socials__link--vk" href="https://vk.com/htmlacademy">
-                <!--<img src="img/icon-vk-mobile.svg" width="24" height="24">-->
+                <span class="visually-hidden">Страница htmlacademy на сайте Вконтакте</span>
                 <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-vk-mobile"></use></svg>
               </a>
             </li>
+
             <li class="socials__item">
               <a class="socials__link  socials__link--inst" href="https://www.instagram.com/htmlacademy">
-                <!-- <img src="img/icon-insta-mobile.svg" width="24" height="24"> -->
-                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
+                <span class="visually-hidden">Страница htmlacademy на сайте Инстаграмм</span>
+                <svg width="20" height="20"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
+                <!-- <img class="page-header__logo-icon" src="img/icon-insta-mobile.svg" width="33" height="38" />-->
               </a>
             </li>
+
             <li class="socials__item">
               <a class="socials__link  socials__link--fb" href="https://www.facebook.com/htmlacademy">
-                <!-- <img src="img/icon-fb-mobile.svg" width="24" height="24"> -->
+                <span class="visually-hidden">Страница htmlacademy на сайте Фейсбук</span>
                 <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb-mobile"></use></svg>
               </a>
             </li>
@@ -194,18 +197,14 @@
 
       <!--Копирайт-->
       <div class="page-footer__copyright">
-        <!--
-        <a href="https://htmlacademy.ru">
-
-          <img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
-        </a>
-      -->
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" >
           <span class="page-footer__copyright-title">HTML Academy</span>
-          <svg class="page-footer__copyright-logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg>
+          <svg class="page-footer__copyright-logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy" ></use></svg>
         </a>
       </div>
     </div>
   </footer>
+
+  <script src="js/svg-icon-polyfill.js"></script>
 </body>
 </html>
