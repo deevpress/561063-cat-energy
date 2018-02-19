@@ -67,7 +67,7 @@
 .form-group__title {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   margin-left: 0;
   position: relative;
 
@@ -109,7 +109,7 @@
 }
 
 .form-group__label {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   position: relative;
 
   font-weight: normal;
@@ -149,13 +149,14 @@
 
 
 .form-group__input {
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  line-height: 24px;
+  min-width: 20px;//хак для IE
 
-  //line-height: 23px;
-  line-height: 43px;
   font-size: 16px;
   font-family: @font-add;
   color: @font-color-text;
@@ -226,8 +227,10 @@
     padding-right: 0;
     padding-left: 16px;
 
-    width: 262px;
-    height: 139px;
+    //width: 262px;
+    //height: 139px;
+    width: 281px;
+    height: 150px;
 
     resize: none;
 
@@ -323,12 +326,13 @@
   }
 
   .form-group__input {
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
     padding-left: 17px;
-    min-height: 50px;
+    min-height: 0;
 
+    line-height: 30px;
     font-size: 20px;
     font-family: @font-add;
 
@@ -357,8 +361,8 @@
       padding-right: 0;
       padding-bottom: 0;
       padding-left: 18px;
-      width: 609px;
-      height: 160px;
+      width: 632px;
+      height: 174px;
 
       resize: none;
 
