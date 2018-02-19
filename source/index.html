@@ -8,6 +8,36 @@
   <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <script src="js/picturefill.js" async></script>
+
+
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "img/mock_cat-energy-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/mock_cat-energy-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1300px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/mock_cat-energy-index-desktop.png" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="js/pixelglass.js"></script>
+<!-- // Pixel Glass -->
+
+
 </head>
 <body>
   <header class="page-header page-header--transparent">
@@ -31,17 +61,17 @@
 
       <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
-        <ul class="main-nav__list  site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white  site-list__item-link-active" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list  site-list">
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white  site-list__item-link-active" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
       <!--</div>-->
     </nav>
   </header>
