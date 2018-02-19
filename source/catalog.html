@@ -8,6 +8,7 @@
   <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <script src="js/picturefill.js" async></script>
+
 </head>
 <body>
   <header class="page-header">
@@ -24,29 +25,31 @@
     </a>
 
     <nav class="main-nav  page-header__main-nav">
-      <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox">
-      <label class="main-nav__toggle  page-header__toggle" for="burger"></label>
+      <!-- <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox" checked> -->
+      <button class="main-nav__toggle main-nav__toggle--on page-header__toggle">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
 
       <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
-        <ul class="main-nav__list  site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link-active  site-list__item-link-active--green" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link " href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list  site-list">
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link-active  site-list__item-link-active--green" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link " href="form.html">Подбор программы</a>
+        </li>
+      </ul>
       <!--</div>-->
     </nav>
   </header>
 
   <main class="page-main">
     <section class="catalog  catalog--main">
-      <h2 class="catalog__title">Каталог продукции</h2>
+      <h2 class="catalog__title" id="catalog">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item  product">
           <a class="product__img  product__img--link-clear" href="#">
@@ -370,7 +373,7 @@
     </div>
 
     <div class="page-footer__links">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
           <img class="page-footer__text" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
 

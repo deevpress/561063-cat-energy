@@ -8,6 +8,8 @@
   <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <script src="js/picturefill.js" async></script>
+
+
 </head>
 <body>
   <header class="page-header page-header--transparent">
@@ -25,23 +27,23 @@
 
     <nav class="main-nav  page-header__main-nav">
       <!-- <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox" checked> -->
-      <button class="main-nav__toggle main-nav__toggle--on page-header__toggle" for="burger">
+      <button class="main-nav__toggle main-nav__toggle--on page-header__toggle">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
       <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
-        <ul class="main-nav__list  site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white  site-list__item-link-active" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link  site-list__item-link--white" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list  site-list">
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white  site-list__item-link-active" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link  site-list__item-link--white" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
       <!--</div>-->
     </nav>
   </header>
@@ -52,7 +54,7 @@
       <p class="banner__slogan">Занялся собой? Займись котом!</p>
 
       <!--Кнопка выбора программы-->
-      <a class="button  button--green  banner__button" href="">Подобрать программу</a>
+      <a class="button  button--green  banner__button" href="form.html">Подобрать программу</a>
       <div class="banner__img">
         <!-- <img src="img/index-can-mobile@1x.png" alt="Cat Energy со вкусом курицы"> -->
 
@@ -77,7 +79,7 @@
           <p class="program-slim__item-desc ">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="form.html" class="program-slim__catalog-link">Каталог Slim</a>
+          <a href="catalog.html#catalog" class="program-slim__catalog-link">Каталог Slim</a>
         </li>
         <li class="program-slim__item  program-slim__item--pro">
           <!--<img class="program-slim__item-img" src="" alt="Программа набора массы">-->
@@ -85,7 +87,7 @@
           <p class="program-slim__item-desc ">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="form.html" class="program-slim__catalog-link">Каталог Pro</a>
+          <a href="catalog.html#catalog" class="program-slim__catalog-link">Каталог Pro</a>
         </li>
       </ul>
     </section><!--<section class="program-slim">-->
@@ -137,20 +139,16 @@
       <div class="example-effect  example__effect">
         <!--<img class="example-effect__img" src="img/before-mobile@1x.png" alt="Фото кота до и после программы">-->
         <div class="example-effect__img" >
-          <!--<div class="example-effect__img-left">-->
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example-effect__img-left" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото кота до программы">
-            </picture>
-          <!--</div>-->
-          <div class="example-effect__img-right">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото кота после программы">
-            </picture>
-          </div>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example-effect__img-left" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото толстого кота до программы">
+          </picture>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="example-effect__img-right" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото худого кота после программы">
+          </picture>
         </div>
 
         <!--Переключатель До и После -->
@@ -191,27 +189,27 @@
       <!--Социальные сети-->
       <div class="socials  page-footer__socials">
         <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link  socials__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Страница htmlacademy на сайте Вконтакте</span>
-                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-vk-mobile"></use></svg>
-              </a>
-            </li>
+          <li class="socials__item">
+            <a class="socials__link  socials__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Страница htmlacademy на сайте Вконтакте</span>
+              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-vk-mobile"></use></svg>
+            </a>
+          </li>
 
-            <li class="socials__item">
-              <a class="socials__link  socials__link--inst" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Страница htmlacademy на сайте Инстаграмм</span>
-                <svg width="20" height="20"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
-                <!-- <img class="page-header__logo-icon" src="img/icon-insta-mobile.svg" width="33" height="38" />-->
-              </a>
-            </li>
+          <li class="socials__item">
+            <a class="socials__link  socials__link--inst" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Страница htmlacademy на сайте Инстаграмм</span>
+              <svg width="20" height="20"><use xlink:href="img/sprite.svg#icon-insta-mobile"></use></svg>
+              <!-- <img class="page-header__logo-icon" src="img/icon-insta-mobile.svg" width="33" height="38" />-->
+            </a>
+          </li>
 
-            <li class="socials__item">
-              <a class="socials__link  socials__link--fb" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Страница htmlacademy на сайте Фейсбук</span>
-                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb-mobile"></use></svg>
-              </a>
-            </li>
+          <li class="socials__item">
+            <a class="socials__link  socials__link--fb" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Страница htmlacademy на сайте Фейсбук</span>
+              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb-mobile"></use></svg>
+            </a>
+          </li>
         </ul>
       </div>
 

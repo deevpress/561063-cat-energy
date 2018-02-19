@@ -8,6 +8,7 @@
   <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <script src="js/picturefill.js" async></script>
+
 </head>
 <body>
   <header class="page-header">
@@ -24,8 +25,10 @@
     </a>
 
     <nav class="main-nav  page-header__main-nav">
-      <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox">
-      <label class="main-nav__toggle  page-header__toggle" for="burger"></label>
+      <!-- <input class="main-nav__toggle-checkbox  visually-hidden" id="burger" type="checkbox" checked> -->
+      <button class="main-nav__toggle main-nav__toggle--on page-header__toggle">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
 
       <!-- <button class="main-nav__toggle page-header__toggle main-nav__toggle--down" type="button"></button> -->
       <!--<div class="main-nav__wrapper">-->
@@ -108,7 +111,8 @@
 
       <fieldset class="form-group  form-group--cat-comment  form__cat-comment">
         <h3 class="form-group__title  form-group__title--decor-comments-right">Комментарий</h3>
-        <textarea class="form-group__input  form-group__input--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <label class="visually-hidden" for="comment">Комментарий</label>
+          <textarea class="form-group__input  form-group__input--textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form-group  product-add-order  form__product-add">
@@ -164,7 +168,7 @@
     </div>
 
     <div class="page-footer__links">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
           <img class="page-footer__text" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
 
