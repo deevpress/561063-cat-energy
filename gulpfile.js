@@ -8,7 +8,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 var del = require("del");
-var htmlmin = require('gulp-htmlmin');
+var htmlmin = require("gulp-htmlmin");
 var imagemin = require("gulp-imagemin");
 var include = require("posthtml-include");
 var minify = require("gulp-csso");
@@ -18,7 +18,7 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var uglify = require("gulp-uglify");
-var pump = require('pump');
+var pump = require("pump");
 
 
 gulp.task("clean", function() {
@@ -51,7 +51,7 @@ gulp.task("html", function() {
 gulp.task("compress", function(cb) {
   pump([
     gulp.src("source/js/*.js"),
-    rename(({ suffix: '.min' })),
+    rename(({ suffix: ".min" })),
     uglify(),
     gulp.dest("build/js")
     ],
