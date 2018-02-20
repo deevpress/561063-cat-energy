@@ -1,26 +1,3 @@
-.title-decor-line-right() {
-  margin-right: -100%;
-  width: 100%;
-  height: 3px;
-
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #68b738;
-  position: absolute;
-}
-
-.title-decor-line-left() {
-  margin-left: -100%;
-  width: 100%;
-  height: 3px;
-
-  content: "";
-  vertical-align: middle;
-  background-color: #68b738;
-  position: absolute;
-}
-
 .form-group {
   color: @font-color-control-title;
 }
@@ -76,13 +53,15 @@
   font-weight: 300;
 
   &--decor-contacts-right::after {
-    .title-decor-line-right();
+    .title-decor-line();
+    margin-right: -100%;
     top: 14px;
     margin-left: 48px;
   }
 
   &--decor-comments-right::after {
-    .title-decor-line-right();
+    .title-decor-line();
+    margin-right: -100%;
     top: 14px;
     margin-left: 24px;
   }
@@ -102,7 +81,8 @@
   position: relative;
 
   &--decor-right::after {
-    .title-decor-line-right();
+    .title-decor-line();
+    margin-right: -100%;
     top: 14px;
     margin-left: 25px;
   }
@@ -269,25 +249,29 @@
     //overflow: hidden;
 
     &--decor-contacts-right::after {
-      .title-decor-line-right();
+      .title-decor-line();
+      margin-right: -100%;
       top: 27px;
       margin-left: 42px;
     }
 
     &--decor-contacts-right::before {
-      .title-decor-line-left();
+      .title-decor-line();
+      margin-left: -100%;
       top: 26px;
       left: -41px;
     }
 
     &--decor-comments-right::after {
-      .title-decor-line-right();
+      .title-decor-line();
+      margin-right: -100%;
       top: 29px;
       margin-left: 38px;
     }
 
     &--decor-comments-right::before {
-      .title-decor-line-left();
+      .title-decor-line();
+      margin-left: -100%;
       top: 29px;
       left: -40px;
     }
@@ -384,13 +368,15 @@
     font-weight: 300;
 
     &--decor-right::after {
-      .title-decor-line-right();
+      .title-decor-line();
+      margin-right: -100%;
       top: 27px;
       margin-left: 41px;
     }
 
     &--decor-right::before {
-      .title-decor-line-left();
+      .title-decor-line();
+      margin-left: -100%;
       top: 27px;
       left: -40px;
     }
