@@ -139,16 +139,21 @@
       <div class="example-effect  example__effect">
         <!--<img class="example-effect__img" src="img/before-mobile@1x.png" alt="Фото кота до и после программы">-->
         <div class="example-effect__img" >
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="example-effect__img-left" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото толстого кота до программы">
-          </picture>
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="example-effect__img-right" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото худого кота после программы">
-          </picture>
+
+          <div class="example-effect__shutter-left">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example-effect__img-left" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото толстого кота до программы">
+            </picture>
+          </div>
+          <div class="example-effect__shutter-right">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="example-effect__img-right" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото худого кота после программы">
+            </picture>
+          </div>
         </div>
 
         <!--Переключатель До и После -->
