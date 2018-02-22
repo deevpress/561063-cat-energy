@@ -151,14 +151,14 @@
   border: 1px solid #e6e6e6;
   //box-shadow: 0px 0px 0px 1px #e6e6e6;
 
-  &:focus {
+  &:focus:not(:active) {
     outline: none;
     border: 1px solid @border-input-active;
     box-shadow: inset 0 0 0 1px @border-input-active;
   }
 
-  &:focus ~ .form-group__email-ico,
-  &:focus ~ .form-group__phone-ico {
+  &:focus:not(:active) ~ .form-group__email-ico,
+  &:focus:not(:active) ~ .form-group__phone-ico {
     fill: #68b738;
   }
 
