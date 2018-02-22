@@ -151,25 +151,25 @@
   border: 1px solid #e6e6e6;
   //box-shadow: 0px 0px 0px 1px #e6e6e6;
 
-  &:focus:not(:active) {
+  &:focus {
     outline: none;
     border: 1px solid @border-input-active;
     box-shadow: inset 0 0 0 1px @border-input-active;
   }
 
-  &:focus:not(:active) ~ .form-group__email-ico,
-  &:focus:not(:active) ~ .form-group__phone-ico {
+  &:focus ~ .form-group__email-ico,
+  &:focus ~ .form-group__phone-ico {
     fill: #68b738;
   }
 
 
-  &:hover {
+  &:hover:not(:active):not(:focus):not(&--invalid) {
     border: 1px solid @border-input-hover;
     box-shadow: none;
   }
 
-  &:hover ~ .form-group__email-ico,
-  &:hover ~ .form-group__phone-ico {
+  &:hover:not(:active):not(:focus):not(&--invalid) ~ .form-group__email-ico,
+  &:hover:not(:active):not(:focus):not(&--invalid) ~ .form-group__phone-ico {
     fill: #222222;
   }
 
@@ -183,6 +183,7 @@
     fill: @border-input-error;
   }
 
+/*
   &--invalid:hover,
   &--invalid:focus {
     border: 1px solid @border-input-error;
@@ -198,6 +199,7 @@
   &--invalid:focus ~ .form-group__phone-ico {
     fill: @border-input-error;
   }
+*/
 
   &--name {
     margin-left: 14px;
