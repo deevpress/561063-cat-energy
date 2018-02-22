@@ -91,7 +91,7 @@
 
         <div class="columns  columns--equal-width-desktop">
           <label class="form-group__label"><span>E-mail:*</span>
-            <input class="form-group__input  form-group__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <input class="form-group__input  form-group__input--invalid  form-group__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             <!-- <img class="form-group__email-ico" src="img/icon-mail.svg" width="24" height="24"> -->
             <svg class="form-group__email-ico" width="17" height="13">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-mail"></use>
@@ -109,11 +109,10 @@
       </fieldset>
 
 
-      <fieldset class="form-group  form-group--cat-comment  form__cat-comment">
-        <h3 class="form-group__title  form-group__title--decor-comments-right">Комментарий</h3>
-        <label class="visually-hidden" for="comment">Комментарий</label>
-          <textarea class="form-group__input  form-group__input--textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
+      <div class="form-group  form-group--cat-comment  form__cat-comment">
+        <label class="form-group__title  form-group__title--decor-comments-right" for="comment">Комментарий</label>
+        <textarea class="form-group__input  form-group__input--textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </div>
 
       <fieldset class="form-group  product-add-order  form__product-add">
         <h3 class="form-group__title-add  form-group__title-add--decor-right">Дополнительно</h3>

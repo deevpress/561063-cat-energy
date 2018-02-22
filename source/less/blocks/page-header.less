@@ -59,8 +59,10 @@
   .page-header {
     padding: 0 30px;
     height: 110px;
-    min-width: @tablet-width;
     border: 0;
+    //min-width: @tablet-width;
+    width: 100%;
+    max-width: @tablet-width;
   }
 
   .page-header__logo {
@@ -83,8 +85,13 @@
 //    ***
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 0 40px;
-    min-width: @desktop-width;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    //min-width: @desktop-width;
+    width: 100%;
+    max-width: @desktop-width;
   }
 
   .page-header--transparent {
